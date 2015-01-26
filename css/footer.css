@@ -8,12 +8,14 @@
 	text-align: center;
 }
 
-.sl_seoFooter {font-family: Arial, Sans-Serif;
+.sl_seoFooter {
+	font-family: Arial, Sans-Serif;
 	font-size: 10px;
 	color: #333;
 	margin: 6px auto;
 	text-align: center;
 }
 
-.seoLinks {margin-bottom:10px;
+.seoLinks {
+	margin-bottom:10px;
 }
