@@ -1,7 +1,5 @@
-.client_header {
-	border-bottom:1px solid #ccc;
+.client_header {border-bottom:1px solid #ccc;
+margin:20px 0 20px 0;
 }
-.clientLogo {
-	display: inline-block;
-	margin: 20px;
+.clientLogoContain {padding:0 0 10px 20px;
 }

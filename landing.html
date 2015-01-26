@@ -9,10 +9,16 @@
     <link rel="stylesheet" type="text/css" href="css/button_actions.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/globalnav.css">
+    <link rel="stylesheet" type="text/css" href="css/entry.css">
     <link rel="stylesheet" type="text/css" href="css/templates.css">
     <link rel="stylesheet" type="text/css" href="css/landing.css">
     <link rel="stylesheet" type="text/css" href="css/heroBanner.css">
     <link rel="stylesheet" type="text/css" href="css/bbpage.css">
+    <link rel="stylesheet" type="text/css" href="css/bblisting.css">
+    <link rel="stylesheet" type="text/css" href="css/shoppinglist.css">
+    <link rel="stylesheet" type="text/css" href="css/changelocation.css">
+    <link rel="stylesheet" type="text/css" href="css/itemDetail.css">
+    <link rel="stylesheet" type="text/css" href="css/helpOverlay.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 
@@ -20,15 +26,14 @@
 	<div id="shoplocal_wrapper" class="shoplocal_wrapper"> 
 		<header id="client_header" class="client_header">
     		<div class="clientLogoContain">
-				<a class="posAndSizeClientLogo" href="http://www.Template_ShopLuxe_201301.com/">
-            		<img class="skinClientLogo" alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png">
+				<a href="http://www.Template_ShopLuxe_201301.com/">
+            		<img alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png">
         		</a>
-        		<div class="cb"></div>
     		</div>
         </header><!--end client_header-->
         
         <section id="shoplocal_container" class="shoplocal_container">
-            <nav class="section_GlobalNav">
+            <nav>
                 <article class="globalNav_rowOne">
                         <div class="locationContain_globalNav">
                             <div class="currentAd_contain">
@@ -39,21 +44,21 @@
                                     1543 Caballo Road,Truth or Consequences, NM 87901
                                 </address>
                             </div>
-                            <div class="changeLocation_globalNav">
+                            <div>
                                 <span class="excludeFromMobile">Looking for another location?</span>
-                                <span><a href="#">Find another store</a></span>
+                                <a href="#">Find another store</a>
                             </div>
                         </div>
                     <div class="savedDeals_globalNav">
                         <div class="savedDeals_label">
                             Saved deals
                         </div>
-                        <div><span class="favoritesListCount">2</span></div>
+                        <div class="favoritesListCount">2</div>
                     </div>
                     <div class="cb"></div>
                 </article>
+                
                 <article class="globalNav_rowTwo">
-                    <div>
                         <div class="containSearch">
                             <input type="text" value="Search Deals">
                             <button id="citystatezip_submit" type="submit" class="inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
@@ -62,138 +67,137 @@
                             <div class="bbpTab">Browse Ad Pages</div>
                             <div class="categoriesTab activeTab">View Categories</div>
                         </div>
-                    
-                    </div>
-                    <div class="cb"></div>
+                       <div class="cb"></div>
                 </article>
                 <div class="globalNav_lineBreak"></div>
-                <div class="cb"></div>
        		</nav><!--end section_GlobalNav-->
             
-            <section id="LandingContain" class="landingContain">
-            	<div class="excludeFromMobile">
-                     <aside class="heroBannerContain cb">
-                            <div>            
-                                <div class="scrollerWrapper">
-                                    <div class="heroBannerSlide">
-                                        <div>
-                                            <a href="#">
-                                                <img class="filler" src="">
-                                            </a>
+            <main class="bodyContent">
+                <section id="LandingContain" class="landingContain">
+                    <div class="excludeFromMobile">
+                         <aside class="heroBannerContain cb">
+                                <div>            
+                                    <div class="scrollerWrapper">
+                                        <div class="heroBannerSlide">
+                                            <div>
+                                                <a href="#">
+                                                    <img class="filler" src="">
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="slideIndicator">
-                                <a></a>
-                                <a></a>
-                                <a class="active"></a>
-                            </div>  
-                                <button type="button" class="heroPrev ng-scope">Previous</button>
-                                <button type="button" class="heroNext ng-scope">Next</button>
-                    </aside><!--end Hero banner-->
-                 </div>
-
-              <div class="cb"></div>
-              
-              <section class="landingPageControls">
-              	<article class="categoryDropdown">
-                    <span class="viewingCategoryLabel">Viewing: </span><span class="categoryDropdownOptions">All Categories <span class="posCategoryDropdownTriangle skinDropdownTriangle"></span></span>
-                </article>
-                <article class="helpContainer excludeFromMobile">
-                    <span class="helpMessage">Help</span><span class="helpBox">?</span>
-                </article>
-              </section><!-- end landingPageControls-->
-              
-              <div class="cb"></div>
-                            
-                 <section id="GridContain">
-                    <div ng-repeat="page in landingPage.Pages">
-                      <div class="firstTemplate">
-                        <div class="landingTemplate_LSSI cb">
-                         <div class="largeBlock">
-                            <div class="offerCount">
-                                <p class="countNumber">4</p>
-                                <p>DEALS</p>
-                            </div>
-                            <div class="imageContain">
-                                <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
-                            </div>
-                            <h2>
-                                House & Home
-                            </h2>
-                        </div>
-                        <div class="ss_holder">
-                        <div class="topBlock">
-                            <div class="smallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)">
+                                <div class="slideIndicator">
+                                    <a></a>
+                                    <a></a>
+                                    <a class="active"></a>
+                                </div>  
+                                    <button type="button" class="heroPrev ng-scope">Previous</button>
+                                    <button type="button" class="heroNext ng-scope">Next</button>
+                        </aside><!--end Hero banner-->
+                     </div>
+    
+                  <div class="cb"></div>
+                  
+                  <section class="landingPageControls">
+                    <article class="categoryDropdown">
+                        <span class="viewingCategoryLabel">Viewing: </span><span class="categoryDropdownOptions">All Categories <span class="posCategoryDropdownTriangle skinDropdownTriangle"></span></span>
+                    </article>
+                    <article class="helpContainer excludeFromMobile">
+                        <span class="helpMessage">Help</span><span class="helpBox">?</span>
+                    </article>
+                  </section><!-- end landingPageControls-->
+                  
+                  <div class="cb"></div>
+                                
+                     <section id="GridContain">
+                        <div ng-repeat="page in landingPage.Pages">
+                          <div class="firstTemplate">
+                            <div class="landingTemplate_LSSI cb">
+                             <div class="largeBlock">
                                 <div class="offerCount">
-                                    <p class="countNumber">1</p>
-                                    <p>DEAL</p>
-                                </div>
-                            <div class="imageContain">
-                                <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
-                            </div>
-                            <h2>
-                                Clothing
-                            </h2>
-                        </div>
-                        </div>
-                        <div class="smallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)">
-                                <div class="offerCount">
-                                    <p class="countNumber">10</p>
+                                    <p class="countNumber">4</p>
                                     <p>DEALS</p>
                                 </div>
+                                <div class="imageContain">
+                                    <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
+                                </div>
+                                <h2>
+                                    House & Home
+                                </h2>
+                            </div>
+                            <div class="ss_holder">
+                            <div class="topBlock">
+                                <div class="smallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)">
+                                    <div class="offerCount">
+                                        <p class="countNumber">1</p>
+                                        <p>DEAL</p>
+                                    </div>
+                                <div class="imageContain">
+                                    <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
+                                </div>
+                                <h2>
+                                    Clothing
+                                </h2>
+                            </div>
+                            </div>
+                            <div class="smallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)">
+                                    <div class="offerCount">
+                                        <p class="countNumber">10</p>
+                                        <p>DEALS</p>
+                                    </div>
+                                <div class="imageContain">
+                                    <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                                </div>
+                                <h2>
+                                    Automotive
+                                </h2>
+                            </div>
+                        </div>
+                         <div class="tallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)" style="position:relative;">
+                            <div class="offerCount">
+                                    <p class="countNumber">6</p>
+                                    <p>DEALS</p>
+                            </div>
                             <div class="imageContain">
                                 <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
                             </div>
                             <h2>
-                                Automotive
+                                Kitchen
                             </h2>
                         </div>
-                    </div>
-                     <div class="tallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)" style="position:relative;">
-                        <div class="offerCount">
-                                <p class="countNumber">6</p>
-                                <p>DEALS</p>
                         </div>
-                        <div class="imageContain">
-                            <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
-                        </div>
-                        <h2>
-                            Kitchen
-                        </h2>
+                     
                     </div>
-                    </div>
-                 
-                </div>
-             </div>
-         </section><!-- end GridContain-->
-                    
-		<div class="cb"></div>
+                 </div>
+             </section><!-- end GridContain-->
+                        
+            <div class="cb"></div>
             </section><!--end landingContain-->
-        
+        </main><!--end bodyContent-->
+
         </section><!--end shoplocal_container-->
   	
          <footer id="shoplocal_footer" class="shoplocal_footer">
             <section class="clientFooter excludeFromTablet excludeFromMobile">
             	Client's footer goes here
             </section>
-            <section class="sl_seoFooter">
+            <section>
             	<div class="sl_footerLinkContain">
                     <p class="seoLinks">
-                        <a class="sl_footerLink" href="#">All Categories</a>
+                        <a href="#">All Categories</a>
                         <span>&nbsp;|&nbsp;</span>
-                        <a class="sl_footerLink" href="#">All Locations</a>
+                        <a href="#">All Locations</a>
                     </p>
                     <div>
                     	Copyright © 1999-2015 ShopLocal, LLC. All Rights Reserved.
                     </div>
                         <div>
-                            <span>Use of this site constitutes acceptance of our </span><a href="#" class="sl_footerLink">Terms of Service</a><span>.</span>
+                            <span>Use of this site constitutes acceptance of our </span><a href="#">Terms of Service</a><span>.</span>
                         </div>
                         <br>
                         <div class="sl_privacyNotice" style="margin-bottom: 10px">
-                            <span>View our </span><a href="#" class="sl_footerLink">Privacy Notice</a><span> / </span><a class="sl_footerLink" href="#">Your California Privacy Rights</a><span>.</span>
+                            <span>View our </span><a href="#">Privacy Notice</a><span> / </span><a href="#">Your California Privacy Rights</a><span>.</span>
                         </div>
                  </div>
             </section>

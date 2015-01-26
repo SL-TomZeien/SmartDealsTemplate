@@ -63,7 +63,7 @@
 .hoursRemaining{
 	margin-top: 18px;
 	font-size: 16px;
-	color: #FC9A2D;
+	color: #000;
 	font-weight: bold;
 }
 .theDeal{
@@ -75,22 +75,8 @@
 	margin: 10px auto;
 	width:85%;
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    /* iPad/tablet Portrait AND landscape */
-   .listingTile {
-		width: 32%;
-		border: 1px solid #ccc;
-		margin: 4px 0px 4px 8px;	
-	}
-	.rightNav{
-		margin-right: 8px;
-	}
-	.leftNav{
-		margin-left: 8px;
-	}
-}
-@media only screen and (min-width: 960px) and (max-width: 1040px) {
-    /* iPad/tablet Portrait */
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    /* iPad/tablet landscape */
     .listingTile {
 		width: 23.7%;
 		border: 1px solid #ccc;
@@ -104,6 +90,20 @@
 		margin-left: 8px;
 	}
  
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    /* iPad/tablet Portrait */
+   .listingTile {
+		width: 32%;
+		border: 1px solid #ccc;
+		margin: 4px 0px 4px 8px;	
+	}
+	.rightNav{
+		margin-right: 8px;
+	}
+	.leftNav{
+		margin-left: 8px;
+	}
 }
 @media only screen and (max-width: 767px) {
     /* Mobile */

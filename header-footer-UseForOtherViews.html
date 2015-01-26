@@ -9,19 +9,27 @@
     <link rel="stylesheet" type="text/css" href="css/button_actions.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/globalnav.css">
+    <link rel="stylesheet" type="text/css" href="css/entry.css">
     <link rel="stylesheet" type="text/css" href="css/templates.css">
     <link rel="stylesheet" type="text/css" href="css/landing.css">
+    <link rel="stylesheet" type="text/css" href="css/heroBanner.css">
     <link rel="stylesheet" type="text/css" href="css/bbpage.css">
+    <link rel="stylesheet" type="text/css" href="css/bblisting.css">
+    <link rel="stylesheet" type="text/css" href="css/shoppinglist.css">
+    <link rel="stylesheet" type="text/css" href="css/changelocation.css">
+    <link rel="stylesheet" type="text/css" href="css/itemDetail.css">
+    <link rel="stylesheet" type="text/css" href="css/helpOverlay.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 
 <body>
 	<div id="shoplocal_wrapper" class="shoplocal_wrapper"> 
-		<header class="client_header">
-    		<div>
-				<a class="clientLogo" href="http://www.Template_ShopLuxe_201301.com/">
-            		<img alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png">
+		<header id="client_header" class="client_header">
+    		<div class="clientLogoContain">
+				<a class="posAndSizeClientLogo" href="http://www.Template_ShopLuxe_201301.com/">
+            		<img class="skinClientLogo" alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png">
         		</a>
+        		<div class="cb"></div>
     		</div>
         </header><!--end client_header-->
         
@@ -35,14 +43,22 @@
             	Client's footer goes here
             </div>
             <div class="sl_seoFooter">
+            	<div class="sl_footerLinkContain">
                     <p class="seoLinks">
-                        <a href="#">All Categories</a><span>&nbsp;|&nbsp;</span><a href="#">All Locations</a>
+                        <a class="sl_footerLink" href="#">All Categories</a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a class="sl_footerLink" href="#">All Locations</a>
                     </p>
-                    <p>Copyright © 1999-2015 ShopLocal, LLC. All Rights Reserved.</p>
-                    <p>Use of this site constitutes acceptance of our <a href="#" class="sl_footerLink">Terms of Service</a>.</p>
-                    <br>
-                    <p>View our <a href="#">Privacy Notice</a> / <a href="#">Your California Privacy Rights</a>.
-                    </p>
+                    <div>Copyright © 1999-2015 ShopLocal, LLC. All Rights Reserved.</div>
+                        <div>
+                            <span>Use of this site constitutes acceptance of our </span><a href="#" class="sl_footerLink">Terms of Service</a><span>.</span>
+                        </div>
+                        <br>
+                        <div class="sl_privacyNotice" style="margin-bottom: 10px">
+                            <span>View our </span><a href="#" class="sl_footerLink">Privacy Notice</a><span> / </span><a class="sl_footerLink" href="#">Your California Privacy Rights</a><span>.</span>
+                        </div>
+                    </div>
+                </div>
             </div>
     	</footer><!--end shoplocal_footer-->
     

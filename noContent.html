@@ -34,19 +34,69 @@
         </header><!--end client_header-->
         
         <section id="shoplocal_container" class="shoplocal_container">
-        
         <main id="bodyContent">
-        
-          <div id="entryContain" class="entryContain">
-              <p class="title">To view deals for a location near you, enter a <span class="bold">City, State</span> or <span class="bold">Zip Code.</span></p>
-       
-              <div class="neup_search_form">
-                   <input type="text" value="Example: Chicago, IL">
-                   <button id="citystatezip_submit" type="submit" class="inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
-              </div>
-          </div><!--end entryContain-->
-          
-     	</main><!--end bodyContent-->
+        	<div id="noContent">
+            	<div class="noContentTopContain">
+                    <h2>There are no deals available for this location.</h2>
+                    <h2 class="anotherLocation">
+                        Please enter another <span class="bold">City</span>, <span class="bold">State</span> or <span class="bold">Zip Code</span>.
+                    </h2>
+                
+                    <section id="noContentSearch">
+                        <div class="changeLocation_search_form">
+                            <input type="text" value="Example: Chicago, IL">
+                            <button id="citystatezip_submit" type="submit" class="inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
+                        </div>
+                    </section><!--end noContentSearch-->
+                </div><!--end noContentTopContain-->
+            
+            	<div class="cb"></div>
+                
+                <section class="otherStoresBottom">
+                    <span class="nearbyLabel_noContent">Or check out these other Shopluxe locations near you:</span>
+                    <article class="noContent_otherStoresUnit">
+                        <div class="infoContain">
+                            <div class="noContentStoreInfo">
+                            <span class="storeName">ShopLuxe Chicago</span>
+                            <p class="address">
+                                6125 E. State St.
+                                Rockford,
+                                IL
+                                61108
+                            </p>
+                            <div class="phoneNumber">
+                                <a href="tel:(815) - 262-0837">
+                                    (815) 262-0837
+                                </a>
+                            </div>
+                            <a ng-click="changeStoreClicked()" ng-href="#!/store/{{store.ID}}">
+                            <button type="button" class="secondaryBtn noContentButton">Make this my store</button></a>
+                        </div>
+                        <div class="cb"></div>
+                     </article>
+                     <article class="noContent_otherStoresUnit">
+                        <div class="infoContain">
+                        <div class="noContentStoreInfo">
+                            <span class="storeName">ShopLuxe Chicago</span>
+                            <p class="address">
+                                6125 E. State St.
+                                Rockford,
+                                IL
+                                61108
+                            </p>
+                            <div class="phoneNumber">
+                                <a href="tel:(815) - 262-0837">
+                                    (815) 262-0837
+                                </a>
+                            </div>
+                            <button type="button" class="secondaryBtn noContentButton">Make this my store</button></a>
+                         </div>
+                         <div class="cb"></div>
+                        </article>
+                    </div>  
+                </section> 
+            </div>
+        </main><!--end bodyContent-->
             
         </section><!--end shoplocal_container-->
   	

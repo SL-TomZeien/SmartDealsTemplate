@@ -1,6 +1,3 @@
-.bold {
-	font-weight: bold;
-}
 #entryContain {
     width: auto;
     margin: 15px auto;
@@ -19,7 +16,6 @@
 	font-size: 14px;
 	margin: 0 auto;
 }
-
 .neup_search_form {
 	border: 1px solid #ccc;
 	padding: 0;
@@ -28,7 +24,6 @@
 	height: 32px;
 	margin:10px auto;
 }
-
 .neup_search_form input {
 	border: none;
 	width: 85%;
@@ -39,13 +34,86 @@
 	font-size: 14px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/*no content*/
+#noContent {
+    width:100%;
+    margin:30px auto;
+}
+#noContent h2 {
+    margin:20px 0 10px 0;
+    font-weight:normal;
+    font-family: 'Gotham SSm 5r','Gotham 5r',Helvetica,Arial,sans-serif;
+}
+.noContent .anotherLocation {
+	font-size:16px;
+}
+.nearbyLabel_noContent {
+    margin-top:15px;
+    margin-bottom:15px;
+    display:block;
+}
+
+.noContentSearch {
+	float:left;
+    width:400px;
+    border:1px solid #ccc;
+}
+.noContentSearch input {
+	height:20px;
+    font-size:14px;
+    border:none;
+    padding:5px;
+    line-height:20px;
+    position:absolute;
+}
+.noContentSearch .changeSubmit {
+	background: url('../Images/kohls_search.png') no-repeat right;
+    background-color:white;
+    background-size:20px 20px;
+    height: 30px;
+    width: 20px;
+    position:relative;
+    left:375px;
+    cursor: pointer;
+ }
+.noContentSearch input[type="text"], input[type="search"] {
+    font-size:14px;
+    width: 350px;
+}
+.noContent_otherStoresUnit {
+    padding: 20px 15px;
+    border-top: 1px solid #ccc;
+}
+.noContentButton {
+	width:200px;
+	margin:20px 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
     /* Tablet */
-   
+   .noContentTopContain {
+	   margin:15px;
+   }
+   .nearbyLabel_noContent {
+	   margin:15px;
+   }
 }
 @media only screen and (max-width: 767px) {
     /* Mobile */
     #entryContain {
 		margin:15px;
 	}
+	.noContentButtons {float:none;
+    }
+    .noContentStoreInfo {float:none;
+    }
+    .noContentSearch {width:270px;
+    }
+    .noContentSearch .changeSubmit {
+        left: 245px;
+    }
+    .noContentSearch input[type="text"], input[type="search"] {
+         width: 230px;
+    }
 }
