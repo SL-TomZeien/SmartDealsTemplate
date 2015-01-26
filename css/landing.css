@@ -117,6 +117,7 @@
     font-size: 14px;
     font-weight:bold;
     text-transform: uppercase;
+	z-index:200;
 }
 
 .containText {
@@ -131,22 +132,11 @@
     width:50%;
     text-align:left;
 }
-
-.dealInblock, .pqInBlock {
-    float: left;
+.dealInblock {
     font-size: 20px;
     font-weight: bold;
     margin-top:7px;
-}
-
-#LandingContain .largeBlock.largeListingBlock .dealInblock {font-size:34px;
 }   
-
-.dealInblock {
-    margin: 0 5px 0 0;
-    font-size:25px;
-}   
-
 .titleInBlock {
     font-size: 16px;
     line-height: 18px;
@@ -367,10 +357,6 @@
 		float:none;
         text-align:left;
         width:85%;
-    }
-	
-    .dealInblock {
-		float:right;
     }
 	
     #LandingContain .largeBlock.largeListingBlock .dealInblock {

@@ -183,6 +183,7 @@
 
     .landingTemplate_SWS > div {
         float: none;
+		margin:14px 0 0 0;
     }
     .landingTemplate_SSSS > div {
         float: none;
@@ -206,7 +207,7 @@
 	}
 	/************** template 3 ****************/
 	.landingTemplate_SWS{
-		 width: auto;
+		width: auto;
 		padding: 0 14px;
 	}
 
@@ -222,6 +223,7 @@
 	.landingTemplate_SSSS > div{
 		margin: 14px 0 0 0;
 	}
+
 }
 
 
