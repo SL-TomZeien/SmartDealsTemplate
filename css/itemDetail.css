@@ -12,7 +12,6 @@
 
 .leftColumn_IDP {
 	padding: 62px 44px 0 44px;
-	width: 325px;
 	vertical-align: top;
 	float:left;
 }
@@ -20,7 +19,7 @@
 	width: 325px;
 }
 .viewLarger {
-	text-align: right;
+	text-align: center;
 	margin-top: 5px;
 }
 
