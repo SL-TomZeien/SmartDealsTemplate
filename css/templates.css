@@ -1,0 +1,234 @@
+/************** box styles ****************/
+.smallBlock, 
+.tallBlock, 
+.wideBlock, 
+.largeBlock{
+    float: left;
+    position: relative;
+    background-color: #FFF;
+    overflow:hidden;
+    cursor:pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #CCC;
+    transition: border-color .5s ease, box-shadow .5s ease;
+}
+.smallBlock:hover, 
+.tallBlock:hover, 
+.wideBlock:hover, 
+.largeBlock:hover {
+    border-color: #bbb;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    transition: border-color .1s ease, box-shadow .1s ease;
+}
+.largeBlock{
+    width: 482px;
+    height: 482px;
+}
+.smallBlock{
+    width: 232px;
+    height: 232px;
+    float: none;
+    display:block;
+}
+.tallBlock{
+    width: 232px;
+    height: 482px;
+}
+.wideBlock{
+    height: 232px;
+    width: 482px;
+}
+
+/************** column code ****************/
+
+.ss_holder{
+    width: auto;
+    float: left;
+    max-height: 482px;
+}
+
+
+/************** spacing code ****************/
+
+.ss_holder, .largeBlock, .tallBlock{
+    margin: 9px;
+}
+.topBlock .smallBlock, 
+.topBlock .wideBlock {
+    margin-bottom: 18px;
+}
+.LargeBlock{
+    margin: 9px;
+}
+
+/************** template 1 ****************/
+.landingTemplate_LEST, .landingTemplate_LESI, .landingTemplate_IEST, .landingTemplate_ISST, .landingTemplate_LSSI{
+    width: 1000px;
+    padding: 0;
+}
+
+
+
+/************** template 2 ****************/
+.landingTemplate_SSESTSS, .landingTemplate_SSESISS, .landingTemplate_SSSSISS{
+    width: 1000px;
+    padding: 0;
+}
+
+
+
+/************** template 3 ****************/
+.landingTemplate_SWS{
+     width: 1000px;
+}
+
+.landingTemplate_SWS > div{
+    float: left;
+    margin: 9px;
+    max-height: 232px;
+}
+
+
+
+/************** template 4 ****************/
+.landingTemplate_SSSS{
+    width: 1000px;
+
+}
+
+.landingTemplate_SSSS > div{
+    float: left;
+    margin: 9px;
+}
+
+
+
+/************** Media Queries For Responsive Behavior ****************/
+
+@media screen and (max-width: 1024px){
+	.largeBlock{
+		width: 358px;
+		height: 358px;
+	}
+	.smallBlock{
+		width: 172px;
+		height: 172px;
+	}
+	.tallBlock{
+		width: 172px;
+		height: 358px;
+	}
+	.wideBlock{
+		height: 172px;
+		width: 358px;
+	}
+
+
+	/************** spacing code ****************/
+	.ss_holder, .largeBlock, .tallBlock{
+		margin: 7px;
+	}
+	.topBlock .smallBlock, 
+	.topBlock .wideBlock {
+		margin-bottom: 14px;
+	}
+
+	/************** template 1 ****************/
+	.landingTemplate_LEST, .landingTemplate_LESI, .landingTemplate_IEST, .landingTemplate_ISST, .landingTemplate_LSSI{
+		width: 750px;
+		margin: 0 auto;
+	}
+	/************** template 2 ****************/
+	.landingTemplate_SSESTSS, .landingTemplate_SSESISS, .landingTemplate_SSSSISS{
+		width: 750px;
+		margin: 0 auto;
+	}
+	/************** template 3 ****************/
+	.landingTemplate_SWS{
+		 width: 750px;
+		margin: 0 auto;
+	}
+
+	.landingTemplate_SWS > div{
+		margin: 7px 7px 0 7px;
+	}
+	/************** template 4 ****************/
+	.landingTemplate_SSSS{
+		width: 750px;
+		margin: 0 auto;
+	}
+
+	.landingTemplate_SSSS > div{
+		margin: 7px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.smallBlock, .tallBlock, .wideBlock, .largeBlock {
+            float: none;
+            height: 160px;
+            width: auto;
+    }
+
+    .ss_holder {
+        float: none;
+        width: auto;
+    }
+    .largeBlock{}
+    .smallBlock{}
+    .tallBlock{}
+    .wideBlock{}
+
+    .landingTemplate_SWS > div {
+        float: none;
+    }
+    .landingTemplate_SSSS > div {
+        float: none;
+    }
+
+
+	/************** spacing code ****************/
+	.ss_holder, .largeBlock, .tallBlock{
+		margin: 14px 0 0 0;
+	}
+
+	/************** template 1 ****************/
+	.landingTemplate_LEST, .landingTemplate_LESI, .landingTemplate_IEST, .landingTemplate_ISST, .landingTemplate_LSSI{
+		width: auto;
+		padding: 0 14px;
+	}
+	/************** template 2 ****************/
+	.landingTemplate_SSESTSS, .landingTemplate_SSESISS, .landingTemplate_SSSSISS{
+		width: auto;
+		padding: 0 14px;
+	}
+	/************** template 3 ****************/
+	.landingTemplate_SWS{
+		 width: auto;
+		padding: 0 14px;
+	}
+
+	.landingTemplate_SWS > div{
+		margin: 14px 0 0 0;
+	}
+	/************** template 4 ****************/
+	.landingTemplate_SSSS{
+		width: auto;
+		padding: 0 14px;
+	}
+
+	.landingTemplate_SSSS > div{
+		margin: 14px 0 0 0;
+	}
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Mobile Landscape */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Mobile Portrait */
+}

@@ -1,0 +1,173 @@
+#subNav{
+
+	width: 100%;
+
+}
+.leftNav{
+
+	float:left;
+	margin-top: 20px;
+
+
+}
+.rightNav{
+
+	float:right;
+	margin-top: 20px;
+
+}
+.chooseCollection{
+
+	float: left;
+	margin-top: 5px;
+	font-size: 14px;
+
+}
+.selectCollection{
+
+	float: left;
+	margin-left: 10px;
+
+	
+}
+.chooseOption{
+
+	padding: 5px 80px 5px 0px ;
+	font-size: 12px;
+
+}
+#listingsContain{
+
+	margin: 10px auto 0 auto;
+	width: 100%;
+
+}
+.listingTile {
+	
+	width: 23.6%;
+	
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin: 7px;
+	float: left;
+	position: relative;
+}
+.listingImage{
+
+	margin: 10px auto;
+	width: 200px;
+	height: 200px;
+
+}
+.listingInfo{
+
+	margin: 20px auto;
+	width: 200px;
+	height: 150px;
+
+}
+.listingTittle{
+
+	font-size: 14px;
+
+}
+.listingPrice{
+
+	font-size: 20px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.originalDeal{
+
+	margin-top: 5px;
+
+}
+.validDates{
+
+	margin-top: 5px;
+}
+.hoursRemaining{
+
+	margin-top: 18px;
+	font-size: 16px;
+	color: #FC9A2D;
+	font-weight: bold;
+	
+}
+.theDeal{
+
+	font-size: 25px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    /* iPad/tablet Portrait AND landscape */
+   .listingTile {
+	
+	width: 32%;
+	border: 1px solid #ccc;
+	margin: 4px 0px 4px 8px;	
+	}
+	.rightNav{
+
+		margin-right: 8px;
+	}
+	.leftNav{
+
+		margin-left: 8px;
+	}
+}
+@media only screen and (min-width: 960px) and (max-width: 1040px) {
+    /* iPad/tablet Portrait */
+    .listingTile {
+	
+	width: 23.7%;
+	border: 1px solid #ccc;
+	margin: 5px 0px 5px 10px;
+
+	}
+	.rightNav{
+
+		margin-right: 8px;
+	}
+	.leftNav{
+
+		margin-left: 8px;
+	}
+ 
+}
+@media only screen and  (min-width: 320px) and (max-width: 767px) {
+    /* Mobile */
+   #subNav{
+
+	display: none;
+
+	}
+
+  .listingTile {
+	
+
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	margin: 0 4px;
+
+	}
+
+	.listingImage{
+
+		margin: 10px auto;
+		float: left;
+		width: 49%;
+	
+
+	}
+	.listingInfo{
+
+		margin: 20px auto;
+		float: left;
+		width: 49%;
+		
+	}
+
+}

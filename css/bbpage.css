@@ -1,0 +1,198 @@
+#PageViewContain {
+	overflow: hidden;
+	width: 100%;
+	padding: 10px 0;
+	border:1px solid #ccc;
+	background:#eee;
+	position: relative;
+}
+#bbpwrapper {
+	margin: 0 auto;
+	outline: 1px solid #ccc;
+	overflow: hidden; 
+	width: 938px; /*for template only*/
+	height: 1200px; /*for template only*/
+	background:#666; /*for template only*/
+}
+/*ad selector*/
+.adSelector {
+	margin:20px 0 20px 0;
+}
+.nowViewingLabel {
+	float: left;
+	font-weight:bold;
+	font-size: 14px;
+	text-align: right;
+	padding: 0 5px 0 0;
+}
+.containNowViewingOptions {
+	float: left;
+	position: relative;
+	white-space: nowrap;
+}
+.nowViewingOption {
+	padding: 0 16px 0 0;
+	font-size: 14px;
+	width: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor:pointer;
+}
+
+/*BBP sub navigation*/
+.bbpNavContain {
+	position:relative;
+}
+.unitA {
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.unitB {
+	float: right;
+	width: 50%;
+	position: relative;
+	top: 3px;
+	margin-bottom: 15px;
+}
+.pageContolContain {float: right;
+	position: relative;
+}
+
+/*page dropdown*/
+.containPageSortOptions {
+	float: left;
+	position: relative;
+	white-space: nowrap;
+	height:20%;
+}
+.activePageSortOption, .activePageSortOptionOpen {
+	font-size: 12px;
+	padding-right: 16px;
+	cursor: pointer;
+	white-space: nowrap;
+	text-align: left;
+	margin-right:6px;
+}
+.activePageSortOption:after {		
+		content: "";
+		height: 0;
+		width: 0;
+		border-left: 5px inset transparent;
+		border-right: 5px inset transparent;
+		border-top: 9px solid #3258b3;
+		position: absolute;
+		right: 0;
+		margin-top: 2px;
+}
+.activePageSortOptionOpen:after {		
+		content: "";
+		height: 0;
+		width: 0;
+		border-left: 5px inset transparent;
+		border-right: 5px inset transparent;
+		border-bottom: 9px solid #3258b3;
+		position: absolute;
+		right: 0;
+		margin-top: 2px;
+}
+.posDropdownTriangle {
+	position: absolute;
+	top: 3px;
+	right: 0;
+}
+.posDropdownTriangleUp {
+	position: absolute;
+	top: 2px;
+	right: 0;
+}
+.pageDropdownOptions {
+	position:absolute;
+	top:22px;
+	left:-10px;
+	background:#eee;
+	border:1px solid #ccc;
+	z-index:100;
+	height:170px;
+	overflow-y:scroll;
+}
+.pageSortOption {
+	width:110px;
+	padding:10px;
+}
+.pageSortOption:hover {
+	background:#fff;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* iPad/tablet Portrait AND Landscape */
+	.adSelector {
+		margin-left:15px;
+	}
+	.unitA {
+		margin-left:15px;
+	}
+	.unitB {
+		margin-right:15px;
+	}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    /* iPad/tablet Landscape */
+
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    /* iPad/tablet Portrait */
+
+}
+@media only screen and (max-width: 767px) {
+    /* mobile Landscape AND Portrait */
+    #bbpwrapper {
+    	outline: none;
+		width: 150px; /*for template without data only*/
+		height: auto; /*for template without data only*/
+		background:none; /*for template without data only*/
+    }
+	.promotionPageSelected {
+		border: 1px solid #ccc;
+		margin: 0 9px 0 9px;
+	}
+    .theToggle {
+        height: 30px;
+        background-color: #3258b3;
+        margin: 5px 0 5px 0;
+        color: #fff;
+    }
+    .theToggle .zoomIcon {
+        float: right;
+        margin: 10px 15px 0 0;
+        font-size:11px;
+    }
+    .mobileBBPSliderXofY {
+        float: left;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 7px 0 0 10px;
+    }
+    .bbpWrapper {
+        width: 150px;
+        margin: 0 auto;
+        overflow: visible !important;
+    }
+    .bbpContainer {
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    /* mobile Portrait */
+
+}

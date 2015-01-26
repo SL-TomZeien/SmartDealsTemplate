@@ -1,0 +1,196 @@
+.globalNav_rowOne {
+	padding-bottom: 10px;
+	width: 100%;
+	border-bottom:1px solid #ccc;
+}
+.globalNav_rowTwo {
+	width: 100%
+}
+
+/*global nav - location*/
+.locationContain_globalNav {
+	float: left;
+	width: 600px;
+}
+.currentAd_contain {
+	margin-bottom:7px;
+	display: block;
+	width: 600px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.currentAd_Title {font-weight:bold;
+}
+
+.currentStoreInfo {display:inline;
+}
+
+/*global nav - saved deals list*/
+.savedDeals_globalNav {
+	float: right;
+	margin-top: 16px;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+	width: 110px;
+}
+.savedDeals_label {
+	font-size: 12px;
+	float: right;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+.favoritesListCount {
+	font-size: 12px;
+	padding: 1px 10px;
+	float: right;
+	border: 1px solid #ccc;
+}
+
+/*global nav - tabs*/
+.tabsContain {
+	float: left;
+	position: relative;
+	top: 10px;
+	margin-left:7px;
+}
+
+.bbpTab {
+	display: inline-block;
+	padding: 10px 20px;
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	cursor: pointer;
+	font-size: 13px;
+	background: #3258b3;
+	color: white;
+	height: 16px;
+}
+
+.categoriesTab {
+	display: inline-block;
+	padding: 11px 20px;
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	cursor: pointer;
+	font-size: 13px;
+	background: #3258b3;
+	color: white;
+	height: 16px;
+}
+
+.activeTab {background: white !important;
+	color: Black;
+	position: relative;
+}
+
+/*global nav - search*/
+.containSearch {
+	border: 1px solid #ccc;
+	padding: 0;
+	position: relative;
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 4px;
+	float: right;
+	height: 32px;
+}
+
+.containSearch input {
+	border: none;
+	width: 85%;
+	padding: 6px;
+	margin: 0;
+	height: 20px;
+	color: #000000;
+	font-size: 14px;
+}
+
+/*bottom of global nav divider*/
+.globalNav_lineBreak {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* iPad/tablet Portrait AND Landscape */
+	.locationContain_globalNav {
+		margin-left:15px;
+	}
+	.savedDeals_globalNav {
+		margin-right:15px;
+	}
+	.containSearch {
+		margin-right:15px;
+	}
+	.tabsContain {
+		margin-left:15px;
+	}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    /* iPad/tablet Landscape */
+ 
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    /* iPad/tablet Portrait */
+	.currentAd_contain {width:460px;
+	}
+
+}
+@media only screen and (max-width: 767px) {
+    /***** mobile Landscape AND Portrait *****/
+	.containSearch {
+		width: auto;
+		margin-right: 15px;
+		margin-left: 15px;
+		float: none;
+		margin-bottom: 10px;
+		display: block;
+		height: 32px;
+	}
+	.currentAd_contain {
+		width:200px;
+		white-space:normal;
+		margin-bottom: 5px;
+	}
+	.currentAd_Title {display:block;
+		margin-bottom:3px;
+	}
+	.locationContain_globalNav{
+		width:200px;
+	}
+	.savedDeals_globalNav {
+		float: right;
+		position: relative;
+		bottom: 5px;
+		width: 75px;
+	}
+	.savedDeals_label {
+		font-size: 11px;
+		display: block;
+		margin-top: 2px;
+		margin-left: 5px;
+		position: relative;
+		top: 15px;
+	}
+	.favoritesListCount {
+		font-size: 12px;
+		padding: 1px 10px;
+		display: block;
+		border: 1px solid #ccc;
+		position: relative;
+		top: -20px;
+		left: -16px;
+	}
+	.tabsContain {top:1px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    /* mobile Portrait */
+}

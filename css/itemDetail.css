@@ -1,0 +1,183 @@
+.containListingDetail {
+	width: 898px;
+	height: 562px;
+	background: white;
+	-webkit-box-shadow: 8px 8px 15.48px 2.52px rgba(0,0,0,0.34);
+	-moz-box-shadow: 8px 8px 15.48px 2.52px rgba(0,0,0,0.34);
+	-o-box-shadow: 8px 8px 15.48px 2.52px rgba(0,0,0,0.34);
+	box-shadow: 8px 8px 15.48px 2.52px rgba(0,0,0,0.34);
+	position:relative;
+	padding-bottom: 10px;
+}
+
+.leftColumn_IDP {
+	padding: 62px 44px 0 44px;
+	width: 325px;
+	vertical-align: top;
+	float:left;
+}
+.itemImage {
+	width: 325px;
+}
+.viewLarger {
+	text-align: right;
+	margin-top: 5px;
+}
+
+/*social share*/
+.containSocialShareIDP {
+	text-align: center;
+	margin-top: 25px;
+}
+.skinShareIcon {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-image:url(../Images/_Template_Shopluxe_Sprite.png);
+	background-repeat: no-repeat;
+	text-indent: -999px;
+	overflow: hidden;
+}
+.skinShareIcon:hover {
+	opacity:0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.containSocialShareIDP .posShareIcon+.posShareIcon {
+	margin-left: 15px;
+}
+.skinFacebookIcon {
+	background-position: -250px -350px;
+}
+.skinTwitterIcon {
+	background-position: -300px -350px;
+}
+.skinPintrestIcon {
+	background-position: -350px -350px;
+}
+.skinGooglePlusIcon {
+	background-position: -400px -350px;
+}
+.skinEmailIcon {
+	background-position: -200px -350px;
+}
+.skinPrintIcon {
+	background-position: -200px -400px;
+}
+
+.rightColumn_IDP {
+	padding: 62px 0 0 0;
+	vertical-align: top;
+	height: 500px;
+	width:485px;
+	float:right
+}
+.scrollable {
+	height: 500px;
+	margin: 0;
+	padding: 0 44px 0 0;
+	overflow: auto;
+}
+.itemTitle {
+	font-size: 26px;
+	line-height: 32px;
+	margin-bottom: 10px;
+}
+.theDealMessage {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline-block;
+}
+.priceQualifier {
+	display:inline-block;
+}
+.additionalDealInformation {margin:3px 0;
+}
+.theOriginalDeal {
+	font-size: 12px;
+	margin-top: 6px;
+}
+.ratingsContain {
+	margin:15px 0;
+	display:block;
+}
+.idpBtnContain {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	position: static;
+	bottom: 10px;
+	left: 15px;
+}
+.theValidDates {
+	margin-top: 15px;
+}
+.idpPrimary, .idpSecondary {
+	display:block;
+	margin-bottom:10px;
+	width:200px;
+}
+.description {
+	font-size: 12px;
+	line-height: 15px;
+	margin-bottom: 15px;
+}
+.finePrint {
+	font-size: 10px;
+	line-height: 12px;
+	font-style: italic;
+	color: #404040;
+	margin-bottom:15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* iPad/tablet Portrait AND Landscape */
+	
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    /* iPad/tablet Landscape */
+
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    /* iPad/tablet Portrait */
+	.containListingDetail {
+		width: 749px;
+	}
+	.rightColumn_IDP {
+		width:336px;
+	}
+}
+@media only screen and (max-width: 767px) {
+    /* mobile Landscape AND Portrait */	
+	.containListingDetail {
+		width: auto;
+		height: auto;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-o-box-shadow: none;
+		box-shadow: none;
+		padding: 0 12px;
+	}
+	.leftColumn_IDP, .rightColumn_IDP {
+		padding: 0;
+		width:auto;
+		height:auto;
+		float:none;
+	}
+	.scrollable {
+		height: auto;
+	}
+	.IDPimageContain {		
+		max-width: 325px;
+		margin-bottom: 25px;
+	}
+	.containSocialShareIDP {
+		margin:15px 0;
+		text-align: left;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    /* mobile Portrait */
+
+}

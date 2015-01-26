@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Deals Template</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/changelocation.css">
+    <link rel="stylesheet" type="text/css" href="css/site_wide.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/globalnav.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/categorieslisting.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+
+<body>
+	<div id="shoplocal_wrapper" class="shoplocal_wrapper"> 
+		<div id="client_header" class="client_header">
+    		<div class="clientLogoContain">
+				<a class="posAndSizeClientLogo" href="http://www.Template_ShopLuxe_201301.com/">
+            		<img class="skinClientLogo" alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png">
+        		</a>
+        		<div class="cb"></div>
+    		</div>
+        </div><!--end client_header-->
+        
+        <div id="shoplocal_container" class="shoplocal_container">
+            <div class="article_GlobalNav">
+                <div class="globalNav_rowOne">
+                    <div class="locationContainer_globalNav sl_ellipsis">
+                        <div class="currentLocation_globalNav">
+                            <div class="currentAd_contain">
+                                <span class="currentAd_Title">
+                                    Today's Ad for
+                                </span>
+                                <span class="currentStoreInfo" ng-show="currentStore.Address">
+                                    <span class="locationLine ng-binding"><span class="excludeFromMobile ng-binding">6125 E. State St,</span> Rockford, IL 61108</span>
+                                </span>
+                            </div>
+                            <div class="changeLocation_globalNav">
+                                <span class="excludeFromMobile">Looking for another location?</span>
+                                <span><a href="#">Find another store</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="savedDeals_globalNav">
+                        <div class="savedDeals_label">
+                            Saved deals
+                        </div>
+                        <div><span class="favoritesListCount">2</span></div>
+                    </div>
+                    <div class="cb"></div>
+                </div>
+                <div class="globalNav_rowTwo">
+                    <div>
+                        <div class="containSearch">
+                            <input type="text" value="Search Deals">
+                            <button id="citystatezip_submit" type="submit" class="inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
+                        </div>
+                        <div class="tabsContain">
+                            <div class="bbpTab">Browse Ad Pages</div>
+                            <div class="categoriesTab activeTab">View Categories</div>
+                        </div>
+                    
+                    </div>
+                    <div class="cb"></div>
+                </div>
+                <div class="lineBreak"></div>
+                <div class="cb"></div>
+       		</div><!--end article_GlobalNav-->
+            <div id="breadCrumb">
+            <div class="breadcrumbImage"></div>
+            <a><p class="breadcrumbText">Back</p></a>
+        </div>
+            <main id="bodyContent">
+                <nav id="subNav">
+                    <article class="leftNav">
+                        <p class="chooseCollection">VIEWING:</p>
+                        <div class="selectCollection">
+                            <select class="chooseOption">
+                                  <option value="option0">SELECT</option>
+                                  <option value="option1">Option 1</option>
+                                  <option value="option2">Option 2</option>
+                                  <option value="optipn3">Option 3</option>
+                                  <option value="option4">Option 4</option>
+                            </select>
+                        </div>
+                    <div class="cb"></div>
+                    </article>
+                    <article class="rightNav">
+                      <p class="chooseCollection">SORT BY</p>
+                        <div class="selectCollection">
+                            <select class="chooseOption">
+                                  <option value="option0">Popularity</option>
+                                  <option value="option1">Tittle A-Z</option>
+                                  <option value="option2">Tittle Z-A</option>
+                                  <option value="optipn3">Price Low-High</option>
+                                  <option value="option4">Price High-Low</option>
+                            </select>
+                        </div>
+                    </article> 
+                </nav><!--end subNav-->
+                <div class="cb"></div>
+                <div id="listingsContain" class="cb">
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                         <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                         </section>
+                         <div class="cb"></div>
+                         <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                         <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal">50-60% off</div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice"></p>
+                            <p class="originalDeal"></p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                         <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal">50-60% off</div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice"></p>
+                            <p class="originalDeal"></p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                         <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                         <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates"></p>
+                            <p class="hoursRemaining">2 DAYS LEFT</p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                         <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates"></p>
+                            <p class="hoursRemaining">2 DAYS LEFT</p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal">50-60% off</div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice"></p>
+                            <p class="originalDeal"></p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                         <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates"></p>
+                            <p class="hoursRemaining">2 DAYS LEFT</p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal">50-60% off</div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice"></p>
+                            <p class="originalDeal"></p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                         <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates"></p>
+                            <p class="hoursRemaining">2 DAYS LEFT</p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates">Valid Jan 15 - Jan 25</p>
+                            <p class="hoursRemaining"></p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                        <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates"></p>
+                            <p class="hoursRemaining">2 DAYS LEFT</p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                    <article class="listingTile">
+                        <section class="listingImage">
+                            <img src="images/150118_02AD_cmb_1.jpg">
+                        </section>
+                         <section class="listingInfo">
+                            <div class="theDeal"></div>
+                            <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
+                            <p class="listingPrice">$17.99</p>
+                            <p class="originalDeal">Orig. $30</p>
+                            <p class="validDates"></p>
+                            <p class="hoursRemaining">2 DAYS LEFT</p>
+                        </section>
+                        <div class="cb"></div>
+                        <section class="buttons">
+                            <div class="shopNow button">Shop now</div>
+                            <div class="viewDetails button">View details</div>
+                        </section>
+                    </article><!--end listingTile-->
+                 
+
+                </div><!--end listingsContain-->
+                <div class="cb"></div>
+
+
+            </main><!--end bodyContent-->
+            
+        </div><!--end shoplocal_container-->
+  	
+        <div id="shoplocal_footer" class="shoplocal_footer">
+            <div class="clientFooter excludeFromTablet excludeFromMobile">
+            	Client's footer goes here
+            </div>
+            <div class="sl_seoFooter">
+            	<div class="sl_footerLinkContain">
+                    <p class="seoLinks">
+                        <a class="sl_footerLink" href="#">All Categories</a>
+                        <span>&nbsp;|&nbsp;</span>
+                        <a class="sl_footerLink" href="#">All Locations</a>
+                    </p>
+                    <div>Copyright © 1999-2015 ShopLocal, LLC. All Rights Reserved.</div>
+                        <div>
+                            <span>Use of this site constitutes acceptance of our </span><a href="#" class="sl_footerLink">Terms of Service</a><span>.</span>
+                        </div>
+                        <br>
+                        <div class="sl_privacyNotice" style="margin-bottom: 10px">
+                            <span>View our </span><a href="#" class="sl_footerLink">Privacy Notice</a><span> / </span><a class="sl_footerLink" href="#">Your California Privacy Rights</a><span>.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</div><!--end shoplocal_footer-->
+    
+    
+     </div><!--end Shoplocal_wrapper-->
+</body>
+</html>

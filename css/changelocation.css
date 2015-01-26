@@ -1,0 +1,95 @@
+#storeLocations {
+	float: left;
+	width: 100%;
+}
+#SL_Wrapper {
+	border-top: 1px solid #ccc;
+	max-width: 1000px;
+}
+#myStore {
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.locationIcon {
+	float:left;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 19px;
+	height: 29px;
+}
+.storeInfo {
+	margin-left: 30px;
+	margin-top: 20px;
+	float:left;
+}
+#storesNearby {
+	margin-top: 20px;
+}
+.otherStore {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.locationTitle {
+	font-size: 18px;
+}
+.storeName {
+	font-size: 15px;
+	font-weight: bold;
+}
+.storePhone {
+	margin-top: 10px;
+}
+.storeHours {
+	font-size: 13px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+#searchStores {
+	margin: 10px 0;
+}
+.storesNear {
+	float: left;
+	margin-left: 30px;
+	margin-right:10px;
+	margin-top: 10px;
+}
+.changeLocation_search_form {
+	border: 1px solid #ccc;
+	padding: 0;
+	position: relative;
+	width: 280px;
+	height: 32px;
+	float:left;
+}
+.changeLocation_search_form  input {
+	border: none;
+	width: 85%;
+	padding: 6px;
+	margin: 0;
+	height: 20px;
+	color: #000000;
+	font-size: 14px;
+}
+.changeLocationBtn {
+	margin:10px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* iPad/tablet Portrait AND landscape */
+	.locationTitle {
+		margin-left: 10px;
+	}
+}
+@media only screen and (min-width: 960px) and (max-width: 1040px) {
+    /* iPad/tablet Portrait */
+
+}
+@media only screen and  (min-width: 320px) and (max-width: 767px) {
+    /* Mobile */
+
+ 
+}
+
+
+
