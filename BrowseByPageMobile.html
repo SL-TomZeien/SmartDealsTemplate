@@ -38,9 +38,8 @@
         <section class="bbpContainer">
            <div id="bbpwrapper" class="bbpWrapper">
                  <ul id="thelist">
-                    <li class="promotionPage ng-scope promotionPageSelected" ng-class="{promotionPageSelected: mobilePageMinimized &amp;&amp; currentPage == $index + 1, promotionPageSelectedOnZoom: !mobilePageMinimized &amp;&amp; currentPage == $index + 1}" ng-repeat="promotionPage in promotionPages">
-                       <div class="pageImageContainer" back-img="http://akimages.shoplocal.com/dyn_rppi/300.0.90.0/Kohls/large/150118_01_ge2j5.jpg" image-width="130" image-height="190.125" style="width: 130px; height: 190.125px; background-image: url(http://akimages.shoplocal.com/dyn_rppi/300.0.90.0/Kohls/large/150118_01_ge2j5.jpg); background-size: 100%; background-repeat: no-repeat;">
-                          <div page-hotspots="4711705" image-width="" class="ng-isolate-scope ng-scope"><img class="maphilight_4711705" src="/Content/images/cleardot.png" usemap="#pagemap_4711705" id="pageimg_4711705" style="width:100%; height:100%; opacity:0; border:none;   filter: alpha(opacity = 0);"></div>
+                    <li class="promotionPage promotionPageSelected">
+                       <div class="pageImageContainer" style="width: 130px; height: 190.125px; background-image: url(http://akimages.shoplocal.com/dyn_rppi/300.0.90.0/Kohls/large/150118_01_ge2j5.jpg); background-size: 100%; background-repeat: no-repeat;">
                        </div>
                     </li>
                  </ul>
@@ -52,36 +51,33 @@
         <section id="Toggle" class="theToggle">
             <div class="mobileBBPSliderXofY">
                 <span>Page 1 of 32</span>
-                <span style="display: none;"> (1 item)</span>
                 <span> (5 items)</span>
             </div>
             <div id="toggleMax" class="zoomIcon bottom"></div>
             <div id="toggleMin" class="zoomIcon top" style="display: none;"></div>
         </section>
         
-        <section class="containAllGrids" style="display: block; visibility: visible;">
-            <div id="listingsContain">
-              <article class="listingTile">
-                     <section class="listingImage">
-                        <img src="images/150118_02AD_cmb_1.jpg">
-                    </section>
-                    <section class="listingInfo">
-                        <div class="theDeal"></div>
-                        <p class="listingTittle">Tek Gear® media-pocket tees for men</p>
-                        <p class="listingPrice">$17.99</p>
-                        <p class="originalDeal">Orig. $30</p>
-                        <p class="validDates">Valid Jan 15 - Jan 25</p>
-                        <p class="hoursRemaining"></p>
-                     </section>
-                     <div class="cb"></div>
-                     <section class="listingButtons">
-                        <button class="primaryBtn">Shop now</button>
-                        <button class="secondaryBtn">View details</button>
-                    </section>
-                </article><!--end listingTile-->
-              <div class="cb"></div>
-              </div>
-          </section>
+        <section id="listingsContain">
+          <article class="listingTile">
+                <div class="listingImage">
+                    <img alt="#" src="images/150118_02AD_cmb_1.jpg">
+                </div>
+                <div class="listingInfo">
+                    <div class="theDeal"></div>
+                    <p class="listingTitle">Tek Gear® media-pocket tees for men</p>
+                    <p class="listingPrice">$17.99</p>
+                    <p class="originalDeal">Orig. $30</p>
+                    <p class="validDates">Valid Jan 15 - Jan 25</p>
+                    <p class="hoursRemaining"></p>
+                </div>
+                <div class="cb"></div>
+                <div class="listingButtons">
+                    <button class="primaryBtn">Shop now</button>
+                    <button class="secondaryBtn">View details</button>
+                </div>
+            </article><!--end listingTile-->
+          <div class="cb"></div>
+          </section><!--end listingsContain-->
     
     </section><!--end shoplocal_container-->
 
