@@ -14,6 +14,9 @@
     background-color:#FFF;
     margin-bottom:60px;
 }
+.landingContain {margin-top:20px;
+}
+
 
 /*Category dropdown*/
 .categoryDropdown {
@@ -117,7 +120,7 @@
     font-size: 14px;
     font-weight:bold;
     text-transform: uppercase;
-	z-index:200;
+	z-index:3;
 }
 
 .containText {
@@ -268,8 +271,9 @@
     }
 	#LandingContain {
 		width:768px;
-		margin:0 auto;
+		margin:20px auto 0 auto;
 	}
+
     .largeListingBlock .addDealInBlock {
         font-size: 14px;
     }
@@ -338,7 +342,7 @@
 	
 	#LandingContain {
 		width:auto;
-		margin:0 auto;
+		margin:20px auto 0 auto;
 	}
 	
 	#LandingContain .smallBlock .imageContain, #LandingContain .wideBlock .imageContain, #LandingContain .tallBlock .imageContain, #LandingContain .smallBlock.smallListingBlock .imageContain, #LandingContain .tallBlock.tallListingBlock .imageContain, #LandingContain .wideBlock.wideListingBlock .imageContain, #LandingContain .largeBlock .imageContain {

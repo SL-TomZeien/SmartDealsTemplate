@@ -23,14 +23,11 @@
 </head>
 
 <body>
-		<header id="client_header" class="client_header">
-    		<div class="clientLogoContain">
-				<a class="posAndSizeClientLogo" href="http://www.Template_ShopLuxe_201301.com/">
-            		<img class="skinClientLogo" alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png">
-        		</a>
-        		<div class="cb"></div>
-    		</div>
-        </header><!--end client_header-->
+	    <header class="client_header"> <!--begin client_header-->
+            <a class="clientLogo" href="http://www.Template_ShopLuxe_201301.com/">
+                <img alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png">
+            </a>
+       </header><!--end client_header-->
         
         <section id="shoplocal_container" class="shoplocal_container">
         
@@ -80,176 +77,267 @@
                 <div class="skinCloseOverlayBtn posCloseOnBoarding"></div>  
             </article>
         </section><!--end helpOverlay -->
+        
         <div class="onBoardingBack excludeFromMobile"></div>
         
-            <nav class="section_GlobalNav">
-                <article class="globalNav_rowOne">
-                        <div class="locationContain_globalNav">
-                            <div class="currentAd_contain">
-                                <span class="currentAd_Title">
-                                    Today's Ad for
-                                </span>
-                                <address class="currentStoreInfo">
-                                    1543 Caballo Road,Truth or Consequences, NM 87901
-                                </address>
-                            </div>
-                            <div class="changeLocation_globalNav">
-                                <span class="excludeFromMobile">Looking for another location?</span>
-                                <span><a href="#">Find another store</a></span>
-                            </div>
+           <nav> <!--begin global nav-->
+            <div class="globalNav_rowOne">
+                    <div class="locationContain_globalNav">
+                        <div class="currentAd_contain">
+                            <span class="currentAd_Title">Today's Ad for</span>
+                            <address class="currentStoreInfo">1543 Caballo Road,Truth or Consequences, NM 87901</address>
                         </div>
-                    <div class="savedDeals_globalNav">
-                        <div class="savedDeals_label">
-                            Saved deals
+                        <div>
+                            <span class="excludeFromMobile">Looking for another location?</span>
+                            <a href="#">Find another store</a>
                         </div>
-                        <div><span class="favoritesListCount">2</span></div>
                     </div>
-                    <div class="cb"></div>
-                </article>
-                <article class="globalNav_rowTwo">
-                    <div>
-                        <div class="containSearch">
-                            <input type="text" value="Search Deals">
-                            <button id="citystatezip_submit" type="submit" class="inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
-                        </div>
-                        <div class="tabsContain">
-                            <div class="bbpTab">Browse Ad Pages</div>
-                            <div class="categoriesTab activeTab">View Categories</div>
-                        </div>
-                    
-                    </div>
-                    <div class="cb"></div>
-                </article>
-                <div class="globalNav_lineBreak"></div>
+                <div class="savedDeals_globalNav">
+                    <div class="favoritesListCount">2</div>
+                    <div class="savedDeals_label">Saved deals</div>
+                </div>
                 <div class="cb"></div>
-       		</nav><!--end section_GlobalNav-->
+            </div>
             
-                <section id="LandingContain" class="landingContain">
-                    <div class="excludeFromMobile">
-                         <aside class="heroBannerContain cb">
-                                <div>            
-                                    <div class="scrollerWrapper">
-                                        <div class="heroBannerSlide">
-                                            <div>
-                                                <a href="#">
-                                                    <img class="filler" src="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slideIndicator">
-                                    <a></a>
-                                    <a></a>
-                                    <a class="active"></a>
-                                </div>  
-                                    <button type="button" class="heroPrev ng-scope">Previous</button>
-                                    <button type="button" class="heroNext ng-scope">Next</button>
-                        </aside><!--end Hero banner-->
-                     </div>
-    
-                  <div class="cb"></div>
-                  
-                  <section class="landingPageControls">
-                    <article class="categoryDropdown">
-                        <span class="viewingCategoryLabel">Viewing: </span><span class="categoryDropdownOptions">All Categories <span class="posCategoryDropdownTriangle skinDropdownTriangle"></span></span>
-                    </article>
-                    <article class="helpContainer excludeFromMobile">
-                        <span class="helpMessage">Help</span><span class="helpBox">?</span>
-                    </article>
-                  </section><!-- end landingPageControls-->
-                  
-                  <div class="cb"></div>
-                                
-                     <section id="GridContain">
-                        <div ng-repeat="page in landingPage.Pages">
-                          <div class="firstTemplate">
-                            <div class="landingTemplate_LSSI cb">
-                             <div class="largeBlock">
-                                <div class="offerCount">
-                                    <p class="countNumber">4</p>
-                                    <p>DEALS</p>
-                                </div>
-                                <div class="imageContain">
-                                    <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
-                                </div>
+            <div class="globalNav_rowTwo">
+                    <div class="containSearch">
+                        <input type="text" value="Search Deals">
+                        <button id="citystatezip_submit" type="submit" class="inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
+                    </div>
+                    <div class="tabsContain">
+                        <div class="globalNavTab">Browse Ad Pages</div>
+                        <div class="globalNavTab activeTab">View Categories</div>
+                    </div>
+                   <div class="cb"></div>
+            </div>
+        </nav><!--end global nav-->
+        
+            <section id="LandingContain" class="landingContain">
+
+              <section class="landingPageControls">
+              	<article class="categoryDropdown">
+                    <div class="categoryViewingLabel">
+                       Viewing:
+                    </div>
+                    <div class="containCategoryOptions">
+                          <div class="categoryOption">
+                                All Categories
+                          </div>
+                          <div class="posCategoryDropdownTriangle skinDropdownTriangle"></div>
+                    </div>
+        		</article><!-- end categoryDropdown -->
+               
+                <article class="helpContainer excludeFromMobile">
+                    <span class="helpMessage">Help</span><span class="helpBox">?</span>
+                </article>
+              </section><!-- end landingPageControls-->
+              
+              <div class="cb"></div>
+                            
+              <section id="GridContain">
+                    <article class="firstTemplate">
+                      <div class="landingTemplate_LSSI cb">
+                       <div class="largeBlock">
+                          <div class="offerCount">
+                              <p class="countNumber">4</p>
+                              <p>DEALS</p>
+                          </div>
+                          <div class="imageContain">
+                              <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
+                          </div>
+                          <h2>
+                              House & Home
+                          </h2>
+                      </div>
+                      <div class="ss_holder">
+                      <div class="topBlock">
+                          <div class="smallBlock">
+                              <div class="offerCount">
+                                  <p class="countNumber">1</p>
+                                  <p>DEAL</p>
+                              </div>
+                          <div class="imageContain">
+                              <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
+                          </div>
+                          <h2>
+                              Clothing
+                          </h2>
+                          </div>
+                      </div>
+                          <div class="smallBlock">
+                              <div class="offerCount">
+                                   <p class="countNumber">10</p>
+                                   <p>DEALS</p>
+                              </div>
+                              <div class="imageContain">
+                                  <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                              </div>
+                              <h2>
+                                  Automotive
+                              </h2>
+                          </div>
+                  </div>
+                   <div class="tallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)" style="position:relative;">
+                      <div class="offerCount">
+                              <p class="countNumber">6</p>
+                              <p>DEALS</p>
+                      </div>
+                      <div class="imageContain">
+                          <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                      </div>
+                      <h2>
+                          Kitchen
+                      </h2>
+                  </div>
+                  </div>
+              </article>
+              <article class="secondTemplate">
+                  <div class="landingTemplate_LSSI cb">
+                       <div class="largeBlock">
+                            <div class="textInfo">
                                 <h2>
-                                    House & Home
+                                    Weekly Specials 5/25
                                 </h2>
-                            </div>
-                            <div class="ss_holder">
-                            <div class="topBlock">
-                                <div class="smallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)">
-                                    <div class="offerCount">
-                                        <p class="countNumber">1</p>
-                                        <p>DEAL</p>
-                                    </div>
-                                <div class="imageContain">
-                                    <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
-                                </div>
-                                <h2>
-                                    Clothing
-                                </h2>
-                            </div>
-                            </div>
-                            <div class="smallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)">
-                                    <div class="offerCount">
-                                        <p class="countNumber">10</p>
-                                        <p>DEALS</p>
-                                    </div>
-                                <div class="imageContain">
-                                    <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
-                                </div>
-                                <h2>
-                                    Automotive
-                                </h2>
-                            </div>
-                        </div>
-                         <div class="tallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)" style="position:relative;">
-                            <div class="offerCount">
-                                    <p class="countNumber">6</p>
-                                    <p>DEALS</p>
+                                 <div class="offerCount">
+                                  <p class="countNumber">60</p>
+                                  <p>DEALS</p>
+                      			</div>
                             </div>
                             <div class="imageContain">
-                                <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                                <img src="http://akimages.shoplocal.com/dyn_rppi/420.0.80.0/HomeDepot/large/0001_STA052514_bP1_h4lz0.jpg">
                             </div>
-                            <h2>
-                                Kitchen
-                            </h2>
                         </div>
+                      <div class="ss_holder">
+                      <div class="topBlock">
+                          <div class="smallBlock smallListingBlock" ng-click="openItemDetail(item.ID)">
+                            <div class="containText">
+                                <div class="dealInblock">
+                                    20-40% Off
+                                </div>
+                                <div class="titleInBlock">
+                                    Men's Shirts
+                                </div> 
+                                <div class="additionalDealTablet">
+                                    <div class="addDealInBlock">
+                                        additional deal information
+                                    </div>
+                                </div>
+                                <div class="hoursRemaining">
+                                    <div>
+                                        <span class="countdownTime">4 <span class="countdownText">DAYS LEFT</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imageContain">
+                                <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
+                            </div>
                         </div>
-                     
+                      </div>
+                          <div class="smallBlock">
+                              <div class="offerCount">
+                                   <p class="countNumber">10</p>
+                                   <p>DEALS</p>
+                              </div>
+                              <div class="imageContain">
+                                  <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                              </div>
+                              <h2>
+                                  Automotive
+                              </h2>
+                          </div>
+                  </div>
+                   <div class="tallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)" style="position:relative;">
+                      <div class="offerCount">
+                              <p class="countNumber">6</p>
+                              <p>DEALS</p>
+                      </div>
+                      <div class="imageContain">
+                          <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                      </div>
+                      <h2>
+                          Kitchen
+                      </h2>
+                  </div>
+                  </div>
+              </article>
+              <article class="thirdTemplate">
+               <div class="landingTemplate_SWS cb">
+                    <div class="firstMod topBlock"> 
+                          <div class="smallBlock">
+                              <div class="offerCount">
+                                   <p class="countNumber">10</p>
+                                   <p>DEALS</p>
+                              </div>
+                              <div class="imageContain">
+                                  <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                              </div>
+                              <h2>
+                                  Automotive
+                              </h2>
+                          </div>
+                	</div>
+                    <div class="firstMod topBlock"> 
+                        <div class="wideBlock wideListingBlock">
+                            <div class="containText">
+                                <div class="dealInblock">
+                                    20-40% Off
+                                </div>
+                                <div class="titleInBlock">
+                                    Men's Shirts
+                                </div> 
+                                <div class="additionalDealTablet">
+                                	<div class="addDealInBlock">
+                                    	additional deal information
+                                	</div>
+                                </div>
+                                <div class="hoursRemaining">
+                                    <div>
+                                        <span class="countdownTime">4 <span class="countdownText">DAYS LEFT</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imageContain">
+                                <img src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
+                            </div>
+                        </div>
                     </div>
-                 </div>
-             </section><!-- end GridContain-->
-                        
-            <div class="cb"></div>
-            </section><!--end landingContain-->
+                    <div class="firstMod topBlock"> 
+                          <div class="smallBlock">
+                              <div class="offerCount">
+                                   <p class="countNumber">10</p>
+                                   <p>DEALS</p>
+                              </div>
+                              <div class="imageContain">
+                                  <img src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                              </div>
+                              <h2>
+                                  Automotive
+                              </h2>
+                          </div>
+                    </div>
+                </div>
+              </article>
+       	</section><!-- end GridContain-->
+        
+        <div class="cb"></div>
+        
+        </section><!--end landingContain-->
         
         </section><!--end shoplocal_container-->
   	
-        <footer id="shoplocal_footer" class="shoplocal_footer">
-            <section class="clientFooter excludeFromTablet excludeFromMobile">
-            	Client's footer goes here
-            </section>
-            <section class="sl_seoFooter">
-            	<div class="sl_footerLinkContain">
-                    <p class="seoLinks">
-                        <a class="sl_footerLink" href="#">All Categories</a>
-                        <span>&nbsp;|&nbsp;</span>
-                        <a class="sl_footerLink" href="#">All Locations</a>
-                    </p>
-                    <div>Copyright © 1999-2015 ShopLocal, LLC. All Rights Reserved.</div>
-                        <div>
-                            <span>Use of this site constitutes acceptance of our </span><a href="#" class="sl_footerLink">Terms of Service</a><span>.</span>
-                        </div>
-                        <br>
-                        <div class="sl_privacyNotice" style="margin-bottom: 10px">
-                            <span>View our </span><a href="#" class="sl_footerLink">Privacy Notice</a><span> / </span><a class="sl_footerLink" href="#">Your California Privacy Rights</a><span>.</span>
-                        </div>
-                 </div>
-            </section>
-    	</footer><!--end shoplocal_footer-->
+     <footer class="shoplocal_footer"> <!--begin shoplocal_footer-->
+        <div class="clientFooter excludeFromTablet excludeFromMobile">
+            Client's footer goes here
+        </div>
+        <div class="sl_seoFooter">
+            <p><a href="#">All Categories</a><span>&nbsp;|&nbsp;</span><a href="#">All Locations</a></p>
+            <br>
+            <p>Copyright Â© 1999-2015 ShopLocal, LLC. All Rights Reserved.</p>
+            <p>Use of this site constitutes acceptance of our <a href="#">Terms of Service</a>.</p>
+            <br>
+            <p>View our <a href="#">Privacy Notice</a> / <a href="#">Your California Privacy Rights</a>.</p>
+        </div>
+    </footer><!--end shoplocal_footer-->
     
 </body>
 </html>
