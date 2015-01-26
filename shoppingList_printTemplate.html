@@ -14,124 +14,75 @@
     <link rel="stylesheet" type="text/css" href="css/shoppinglist.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <style>
-
-        @media only screen and (max-width: 600px) {
-
-           .sl_list_top {
-			   margin:10px 0 0 10px;   
-           }
-		   .countHolder {
-			   border-bottom:1px solid #ccc;
-		   }
-		   .count {
-			   padding:0 10px 5px 10px;
-		   }
-           .sl_imgHolder{
-                display:block;
-           }
-		   .sl_list_wrapper {
-			   border:none !important;
-		   }
-		   
-           .sl_item_details{
-                display:block;
-                width:50%;
-				padding-bottom:25px !important;
-           }
-		   .originalDeal {
-			   margin-top:0 !important;
-		   }
+        .outerContain{
+            padding: 20px;
         }
-
+        .itemImage {
+            width: 50px;
+            height: 50px;
+            vertical-align: top; 
+            float: left
+        }
     </style>
+
 </head>
 
 <body>
-
-      <table class="overallTable" style="width: 580px; margin:10px auto;">
+    <div class="outerContain">
+        <img class="skinClientLogo" alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png" />
+        <p style="margin-top: 10px;">2140 N. Elston Ave., Chicago, IL 60614</p>
+        <p class="emailstorePhone">(773) 342-9032</p>
+        <br>
+        <p class="count" style="color:Black; font-weight:bold;border-bottom: 1px solid #ccc;">3 items</p>
+        <table style="padding: 15px 10px; border-bottom: 1px solid #ccc; width: 100%;">
           <tr>
-              <td>
-              <center style="width: 100%">
-                  <table class="sl_list_container sl_list_top" style="font-family: Arial, sans-serif; font-size:12px; width: 580px; margin-bottom:20px; background-color: #FFF;">
-                      <tbody>
-                          <tr>
-                              <td colspan="2">
-                                  <img class="skinClientLogo" alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png" />
-                                  <div style="font-size:14px; font-weight:bold; margin-top:5px;">Shopping List</div>
-                                  <div>
-                                      <div style=" margin-top: 15px;">
-                                          <div style="display: inline">2140 N. Elston Ave., Chicago, IL 60614</div>
-                                      </div>
-                                          <p class="emailstorePhone">(773) 342-9032</p>
-                                     
-                                  </div>
-                              </td>
-                          </tr>
-                      </tbody>
-                      </table>
-                      <table class="countHolder" style="font-size:12px; font-family:arial, sans-serif; width:100%; margin-bottom:10px;">
-                          <tr>
-                              <td class="count" style="color:Black; font-weight:bold;">
-                                  2 items
-                              </td>
-                          </tr>
-                      </table>
-                      <table class="sl_list_wrapper" style="width: 580px; border:1px solid #ccc; padding:5px;">
-                      <tr>
-                          <td>
-
-                      <table class="sl_list_container" style="padding-bottom: 4px; font-family: Arial, sans-serif; width: 100%; background-color: #FFF;">
-                          <tbody>
-                              <tr>
-                                  <td class="sl_imgHolder" valign="top">
-                                      <a href="" style="text-decoration:none;">
-                                          <img class="itemImage" style="vertical-align: top; margin: 10px 0;" src="images/150118_02AD_3a.jpg"/>
-                                      </a>
-                                  </td>
-                                  <div class="cb"></div>
-                                  <td class="sl_item_details" style="padding: 0 10px 6px; vertical-align:top;" valign="top">
-                                      <div class="originalDeal" style="color: #000;font-size: 30px; font-weight: bold; margin-top: 20px;">17.99</div>
-                                      <div class="priceQualifier" style="color: #000; margin-right: 10px;">(Orig. $30)</div>
-                                      <div>
-                                          <a href="" style="text-decoration:none;">
-                                              <p class="listingTitle" style="color:Black; font-weight:bold; font-size: 20px; text-decoration:none; margin:5px 0;">
-                                              Tek Gear® reversible basketball shorts for men
-                                              </p>
-                                          </a>
-                                      </div>
-                                      <div class="validDates" style="color: #000; margin-right: 10px;">Valid Jan 15 - Jan 25</div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td class="sl_imgHolder" valign="top">
-                                      <a href="" style="text-decoration:none;">
-                                          <img class="itemImage" style="vertical-align: top; margin: 10px 0;" src="images/150118_02AD_3a.jpg"/>
-                                      </a>
-                                  </td>
-                                  <div class="cb"></div>
-                                  <td class="sl_item_details" style="padding: 0 10px 6px; vertical-align:top;" valign="top">
-                                      <div class="originalDeal" style="color: #000;font-size: 30px; font-weight: bold; margin-top: 20px;">17.99</div>
-                                      <div class="priceQualifier" style="color: #000; margin-right: 10px;">(Orig. $30)</div>
-                                      <div>
-                                          <a href="" style="text-decoration:none;">
-                                              <p class="listingTitle" style="color:Black; font-weight:bold; font-size: 20px; text-decoration:none; margin:5px 0;">
-                                              Tek Gear® reversible basketball shorts for men
-                                              </p>
-                                          </a>
-                                      </div>
-                                      <div class="validDates" style="color: #000; margin-right: 10px;">Valid Jan 15 - Jan 25</div>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>            
-
-                      </td>
-                  </tr>
-              </table>
-          </center>
+            <td style="padding: 10px;">
+            <img class="itemImage" src="images/150118_02AD_3a.jpg" />
           </td>
-      </tr>
-  </table>
+          <td style="vertical-align: top; padding: 10px;">
+            <p class="originalDeal" style="color: #000;font-size: 30px; font-weight: bold;">17.99</p>
+            <p class="priceQualifier" style="color: #000; padding-bottom: 10px; margin-right: 10px;">(Orig. $30)</p>
+            <p class="additionalInfo" stylecolor=" #000; padding: 10px 0;margin-right: 10px; font-size: 14px;">Additional information</p>
 
+            <p class="listingTitle" style="color:Black; font-weight:bold; font-size: 20px; text-decoration:none; padding:10px 0;" >Tek Gear® reversible basketball shorts for men</p>
+            <p class="validDates" style="color: #000; padding: 0 0 5px 0;margin-right: 10px;">Valid Jan 15 - Jan 25</p>
+            <div class="cb"></div>
+          </td>
+          </tr>
+        </table>
+        <table style="padding: 15px 10px; border-bottom: 1px solid #ccc; width: 100%;">
+          <tr>
+            <td style="padding: 10px;">
+            <img class="itemImage" src="images/150118_02AD_3a.jpg" />
+          </td>
+          <td style="vertical-align: top; padding: 10px;">
+            <p class="originalDeal" style="color: #000;font-size: 30px; font-weight: bold;">17.99</p>
+            <p class="priceQualifier" style="color: #000; padding-bottom: 10px; margin-right: 10px;">(Orig. $30)</p>
+            <p class="additionalInfo" stylecolor=" #000; padding: 10px 0;margin-right: 10px; font-size: 14px;">Additional information</p>
+
+            <p class="listingTitle" style="color:Black; font-weight:bold; font-size: 20px; text-decoration:none; padding:10px 0;" >Tek Gear® reversible basketball shorts for men</p>
+            <p class="validDates" style="color: #000; padding: 0 0 5px 0;margin-right: 10px;">Valid Jan 15 - Jan 25</p>
+            <div class="cb"></div>
+          </td>
+          </tr>
+        </table>
+
+        <table style="padding: 15px 10px; border-bottom: 1px solid #ccc; width: 100%;">
+          <tr>
+            <td style="padding: 10px;">
+            <img class="itemImage" src="images/150118_02AD_3a.jpg" />
+          </td>
+          <td style="vertical-align: top; padding: 10px;">
+            <p class="originalDeal" style="color: #000;font-size: 30px; font-weight: bold;">17.99</p>
+            <p class="priceQualifier" style="color: #000; padding-bottom: 10px; margin-right: 10px;">(Orig. $30)</p>
+            <p class="additionalInfo" stylecolor=" #000; padding: 10px 0;margin-right: 10px; font-size: 14px;">Additional information</p>
+
+            <p class="listingTitle" style="color:Black; font-weight:bold; font-size: 20px; text-decoration:none; padding:10px 0;" >Tek Gear® reversible basketball shorts for men</p>
+            <p class="validDates" style="color: #000; padding: 0 0 5px 0;margin-right: 10px;">Valid Jan 15 - Jan 25</p>
+            <div class="cb"></div>
+          </td>
+          </tr>
+        </table>
+    </div>
 </body>
 </html>
