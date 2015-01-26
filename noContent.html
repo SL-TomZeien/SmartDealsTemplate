@@ -23,109 +23,72 @@
 </head>
 
 <body>
-	<div id="shoplocal_wrapper" class="shoplocal_wrapper"> 
-		<header id="client_header" class="client_header">
-    		<div class="clientLogoContain">
-				<a class="posAndSizeClientLogo" href="http://www.Template_ShopLuxe_201301.com/">
-            		<img class="skinClientLogo" alt="Template_Shopluxe201301 Logo" title="Template_Shopluxe201301 Logo" src="Images/_Template_ShopLuxe_sprite_LOGOS.png">
-        		</a>
-        		<div class="cb"></div>
-    		</div>
-        </header><!--end client_header-->
-        
-        <section id="shoplocal_container" class="shoplocal_container">
-        <main id="bodyContent">
-        	<div id="noContent">
-            	<div class="noContentTopContain">
-                    <h2>There are no deals available for this location.</h2>
-                    <h2 class="anotherLocation">
-                        Please enter another <span class="bold">City</span>, <span class="bold">State</span> or <span class="bold">Zip Code</span>.
-                    </h2>
-                
-                    <section id="noContentSearch">
-                        <div class="changeLocation_search_form">
-                            <input type="text" value="Example: Chicago, IL">
-                            <button id="citystatezip_submit" type="submit" class="inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
-                        </div>
-                    </section><!--end noContentSearch-->
-                </div><!--end noContentTopContain-->
+   
+    <section id="shoplocal_container" class="shoplocal_container">
+    
+        <div id="noContent">
+            <div class="noContentTopContain">
+                <h2>There are no deals available for this location.</h2>
+                <h2 class="anotherLocation">
+                    Please enter another <span class="bold">City</span>, <span class="bold">State</span> or <span class="bold">Zip Code</span>.
+                </h2>
             
-            	<div class="cb"></div>
-                
-                <section class="otherStoresBottom">
-                    <span class="nearbyLabel_noContent">Or check out these other Shopluxe locations near you:</span>
-                    <article class="noContent_otherStoresUnit">
-                        <div class="infoContain">
-                            <div class="noContentStoreInfo">
-                            <span class="storeName">ShopLuxe Chicago</span>
-                            <p class="address">
-                                6125 E. State St.
-                                Rockford,
-                                IL
-                                61108
-                            </p>
-                            <div class="phoneNumber">
-                                <a href="tel:(815) - 262-0837">
-                                    (815) 262-0837
-                                </a>
-                            </div>
-                            <a ng-click="changeStoreClicked()" ng-href="#!/store/{{store.ID}}">
-                            <button type="button" class="secondaryBtn noContentButton">Make this my store</button></a>
-                        </div>
-                        <div class="cb"></div>
-                     </article>
-                     <article class="noContent_otherStoresUnit">
-                        <div class="infoContain">
-                        <div class="noContentStoreInfo">
-                            <span class="storeName">ShopLuxe Chicago</span>
-                            <p class="address">
-                                6125 E. State St.
-                                Rockford,
-                                IL
-                                61108
-                            </p>
-                            <div class="phoneNumber">
-                                <a href="tel:(815) - 262-0837">
-                                    (815) 262-0837
-                                </a>
-                            </div>
-                            <button type="button" class="secondaryBtn noContentButton">Make this my store</button></a>
-                         </div>
-                         <div class="cb"></div>
-                        </article>
-                    </div>  
-                </section> 
-            </div>
-        </main><!--end bodyContent-->
-            
-        </section><!--end shoplocal_container-->
-  	
-        <footer id="shoplocal_footer" class="shoplocal_footer">
-            <section class="clientFooter excludeFromTablet excludeFromMobile">
-            	Client's footer goes here
-            </section>
-            <section class="sl_seoFooter">
-            	<div class="sl_footerLinkContain">
-                    <p class="seoLinks">
-                        <a class="sl_footerLink" href="#">All Categories</a>
-                        <span>&nbsp;|&nbsp;</span>
-                        <a class="sl_footerLink" href="#">All Locations</a>
-                    </p>
-                    <div>
-                    	Copyright © 1999-2015 ShopLocal, LLC. All Rights Reserved.
+                <section id="noContentSearch">
+                    <div class="changeLocation_search_form">
+                        <input type="text" value="Example: Chicago, IL">
+                        <button id="citystatezip_submit" type="submit" class="inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
                     </div>
-                        <div>
-                            <span>Use of this site constitutes acceptance of our </span><a href="#" class="sl_footerLink">Terms of Service</a><span>.</span>
+                </section><!--end noContentSearch-->
+            </div><!--end noContentTopContain-->
+        
+            <div class="cb"></div>
+            
+            <section class="otherStoresBottom">
+                <span class="nearbyLabel_noContent">Or check out these other Shopluxe locations near you:</span>
+                <article class="noContent_otherStoresUnit">
+                    <div class="infoContain">
+                        <div class="noContentStoreInfo">
+                        <span class="storeName">ShopLuxe Chicago</span>
+                        <p class="address">
+                            6125 E. State St.
+                            Rockford,
+                            IL
+                            61108
+                        </p>
+                        <div class="phoneNumber">
+                            <a href="tel:(815) - 262-0837">
+                                (815) 262-0837
+                            </a>
                         </div>
-                        <br>
-                        <div class="sl_privacyNotice" style="margin-bottom: 10px">
-                            <span>View our </span><a href="#" class="sl_footerLink">Privacy Notice</a><span> / </span><a class="sl_footerLink" href="#">Your California Privacy Rights</a><span>.</span>
+                        <a ng-click="changeStoreClicked()" ng-href="#!/store/{{store.ID}}">
+                        <button type="button" class="secondaryBtn noContentButton">Make this my store</button></a>
+                    </div>
+                    <div class="cb"></div>
+                 </article>
+                 <article class="noContent_otherStoresUnit">
+                    <div class="infoContain">
+                    <div class="noContentStoreInfo">
+                        <span class="storeName">ShopLuxe Chicago</span>
+                        <p class="address">
+                            6125 E. State St.
+                            Rockford,
+                            IL
+                            61108
+                        </p>
+                        <div class="phoneNumber">
+                            <a href="tel:(815) - 262-0837">
+                                (815) 262-0837
+                            </a>
                         </div>
-                 </div>
-            </section>
-    	</footer><!--end shoplocal_footer-->
-    
-    
-     </div><!--end Shoplocal_wrapper-->
+                        <button type="button" class="secondaryBtn noContentButton">Make this my store</button></a>
+                     </div>
+                     <div class="cb"></div>
+                    </article>
+                </div>  
+            </section> 
+        </div>
+        
+    </section><!--end shoplocal_container-->
+
 </body>
 </html>
