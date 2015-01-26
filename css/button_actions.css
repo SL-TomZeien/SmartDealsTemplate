@@ -224,7 +224,6 @@ button.inputSearchBtn {
 
 /*breadcrumb*/
 .breadCrumbContain {
-	
 		margin: 20px 0 20px 0;
 		position:relative;
 }
@@ -244,6 +243,7 @@ button.inputSearchBtn {
 		left: 0;
 		top: 3px;
 }
+
 
 /*ratings and reviews*/
 .starRating {
