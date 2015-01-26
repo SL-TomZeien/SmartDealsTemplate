@@ -14,76 +14,8 @@
     background-color:#FFF;
     margin-bottom:60px;
 }
-.no-backgroundsize  #LandingContain #GridContain {
-    background-repeat: repeat;
-}
-
-
-/*the flag*/
-.theFlag_landing, .theFlag_landing_large {
-    min-width: 72px;
-    color: #000;
-    font-size: 10px;
-    line-height: 10px;
-    font-weight: normal;
-    position: relative;
-    margin-top:8px;
-    margin-bottom:3px;
-}
-.theFlag_landing:before, .theFlag_landing_large:before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border: 3px solid #000;
-    display: inline-block;
-    -moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	border-radius: 50%;
-}
-.theFlag_landing:after, .theFlag_landing_large:after {
-    content: "";
-    width: 4px;
-    height: 6px;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
-    display: inline-block;
-    -moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	position: absolute;
-	left: 7px;
-	top: 6px;
-}
-.theFlag_landing > div, .theFlag_landing_large > div {
-    display: inline-block;
-    line-height: 20px;
-}
-.theFlag_landing .countdownTime, .theFlag_landing_large .countdownTime {
-	font-size: 27px;
-	display: inline-block;
-}
-.theFlag_landing .lastDay, .theFlag_landing_large .lastDay {font-size: 18px;
-    display: inline-block;
-    position: relative;
-    top: -3px;
-    text-transform:uppercase;
-}
-.theFlag_landing .countdownText, .theFlag_landing_large .countdownText {
-	display: inline-block;
-    width: 30px;
-    vertical-align: top;
-    line-height: 11px;
-    font-size: 12px;
-    margin-top: -1px;
-    margin-left: 3px;
-}
-
 
 /*Category dropdown*/
-
 .categoryDropdown {
 	margin:0 0 20px 0;
 	float:left;
@@ -109,6 +41,11 @@
 	white-space: nowrap;
 	position: relative;
 	cursor:pointer;
+}
+.posCategoryDropdownTriangle {
+	position: absolute;
+	top: 3px;
+	right: 0;
 }
 
 /*help box*/
@@ -139,7 +76,7 @@
 /******* Offer Count Badge Styles ********/
 #LandingContain .offerCount{
     width:46px;
-    height:34px;
+    height:40px;
     background:#3258b3;
     text-align:center;
     color:#FFF;
@@ -185,44 +122,54 @@
 .containText {
     padding: 12px;
 }
+
 .largeListingBlock .containText {
     padding: 16px 12px 10px 16px;
 }
+
 #LandingContain .wideBlock.wideListingBlock .containText {
     width:50%;
     text-align:left;
 }
+
 .dealInblock, .pqInBlock {
     float: left;
     font-size: 20px;
     font-weight: bold;
     margin-top:7px;
 }
+
 #LandingContain .largeBlock.largeListingBlock .dealInblock {font-size:34px;
 }   
+
 .dealInblock {
     margin: 0 5px 0 0;
     font-size:25px;
 }   
+
 .titleInBlock {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     margin-top:3px;
-    }
+}
+
 .largeListingBlock .titleInBlock {
     font-size: 20px;
     line-height: 18px;
     margin-top:8px;
 }
+
 .addDealInBlock {
     font-size: 12px;
     text-transform: lowercase;
     margin-top:8px;
-    }
+}
+
 .largeListingBlock .addDealInBlock {
     font-size: 16px;
 }
+
 #LandingContain .smallBlock.smallListingBlock .addDealInBlock {
     margin-top:3px;
 }
@@ -232,6 +179,7 @@
 #LandingContain .imageContain img {
     max-width:100%;
 }
+
 #LandingContain .heroBlock .imageContain {
     width:440px;
     height:440px;
@@ -239,6 +187,7 @@
     left:126px;
     bottom:30px;
 }
+
 #LandingContain .largeBlock .imageContain {
     width: 400px;
     height: 400px;
@@ -247,14 +196,17 @@
     top:20px;
     margin:0 auto;
 }
+
 #LandingContain .specialBlock.largeBlock .imageContain {
     bottom:46px;
 }
+
 #LandingContain .wideBlock .imageContain {
     width:180px;
     height:180px;
     margin:10px auto 0 auto;
 }
+
 #LandingContain .smallBlock .imageContain {
     width:180px;
     height:180px;
@@ -282,18 +234,21 @@
     top:150px;
     width:200px;
 }
+
 #LandingContain .tallBlock.tallListingBlock .imageContain {
     position: relative;
     left: 0;
     margin:0 auto;
     top:50px;
 }
+
 #LandingContain .wideBlock.wideListingBlock .imageContain {
     float:left;
     position:absolute;
     top: 7px;
     left: 275px;
 }
+
 #LandingContain .specialBlock {
     text-decoration:none;
     display: block;
@@ -370,11 +325,6 @@
         top: 15px;
         left: 200px;
     }
-    .theFlag_landing .lastDay, .theFlag_landing_large .lastDay {
-        font-size: 15px;
-        top: -4px;
-    }
-	
 	.landingPageControls {
 		margin:0 15px;
 	}
@@ -389,69 +339,67 @@
         background-color: transparent;
         width: 96%;
     }
+	
     .containText {float:right;
         text-align:right;
         background-color: transparent;
         width: 50%;
     }
+	
 	#LandingContain {
 		width:auto;
 		margin:0 auto;
 	}
+	
 	#LandingContain .smallBlock .imageContain, #LandingContain .wideBlock .imageContain, #LandingContain .tallBlock .imageContain, #LandingContain .smallBlock.smallListingBlock .imageContain, #LandingContain .tallBlock.tallListingBlock .imageContain, #LandingContain .wideBlock.wideListingBlock .imageContain, #LandingContain .largeBlock .imageContain {
         height: 140px;
         margin: 12px 0 0 10px;
         width: 140px;
 		top:0;
-    }      
+    }  
+	    
     #LandingContain .wideBlock.wideListingBlock .containText {
         width:50%;
         text-align:right;
     }
-    #LandingContain .largeBlock.largeListingBlock .containText {float:none;
-                                                                text-align:left;
-                                                                width:85%;
+	
+    #LandingContain .largeBlock.largeListingBlock .containText {
+		float:none;
+        text-align:left;
+        width:85%;
     }
-    .dealInblock {float:right;
+	
+    .dealInblock {
+		float:right;
     }
-    #LandingContain .largeBlock.largeListingBlock .dealInblock {float:none;
-                                                                text-align:left;
+	
+    #LandingContain .largeBlock.largeListingBlock .dealInblock {
+		float:none;
+        text-align:left;
     }
-
+	
     #LandingContain .tallBlock .imageContain {
         top:6px;
     }
+	
     #LandingContain .smallBlock.smallListingBlock .imageContain, #LandingContain .tallBlock.tallListingBlock .imageContain {
         float:none;
         position: absolute;
         top: 0;
     }
+	
     #LandingContain .wideBlock.wideListingBlock .imageContain {
         float:none;
         position: absolute;
         top:0;
         left:0;
     }
-    #LandingContain .largeBlock.largeListingBlock .imageContain {float:none;
-                                                                 width:70%;
-                                                                 top: -5px;
-    }
 	
-	/*flag*/
-    .theFlag_landing {
-        float:right;
+    #LandingContain .largeBlock.largeListingBlock .imageContain {
+		float:none;
+        width:70%;
+        top: -5px;
     }
-    .theFlag_landing .lastDay, .theFlag_landing_large .lastDay {
-        font-size: 14px;
-        top: -6px;
-    }
-	
-    .additionalDealTablet {display:block;
-    }
-	
-	.categoryDropdown{
-		margin:5px 0 10px 0;
-	}
 }
 @media only screen and (max-width: 480px) {
     /* Mobile Portrait */

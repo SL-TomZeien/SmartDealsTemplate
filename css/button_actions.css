@@ -229,7 +229,11 @@ button.inputSearchBtn {
 		position:relative;
 }
 
-.breadCrumbArrow {
+.breadcrumb {
+	margin-left:10px;
+}
+
+.breadcrumb:before {
 		content: "";
 		height: 0;
 		width: 0;
@@ -237,10 +241,8 @@ button.inputSearchBtn {
 		border-top: 4px solid transparent;
 		border-bottom: 4px solid transparent;
 		position: absolute;
-		margin-top: 2px;
-}
-.breadcrumbLabel {
-	margin-left:10px;
+		left: 0;
+		top: 3px;
 }
 
 /*ratings and reviews*/

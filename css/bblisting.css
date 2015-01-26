@@ -1,11 +1,37 @@
-#subNav{
-	width: 100%;
-}
 .leftNav{
 	float:left;
 }
 .rightNav{
 	float:right;
+}
+
+/*sort by dropdown*/
+.sortByLabel {
+	float: left;
+	font-weight:bold;
+	font-size: 14px;
+	text-align: right;
+	padding: 0 5px 0 0;
+}
+.containSortOptions {
+	float: left;
+	position: relative;
+	white-space: nowrap;
+}
+.sortOption {
+	padding: 0 16px 0 0;
+	font-size: 14px;
+	width: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor:pointer;
+}
+.posSortDropdownTriangle {
+	position: absolute;
+	top: 3px;
+	right: 0;
 }
 .chooseCollection{
 	float: left;
@@ -25,12 +51,15 @@
 	width: 100%;
 }
 .listingTile {
-	width: 23.6%;
+	margin: .75% 0 .75% 1.5%;
+	width: 23.875%;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
-	margin: 7px;
 	float: left;
 	position: relative;
+}
+.listingTile:nth-child(4n+1) {
+	margin-left: 0;
 }
 .listingImage {
 	margin: 10px auto;
@@ -46,18 +75,18 @@
 	height: 150px;
 
 }
-.listingTittle{
+.listingTitle {
 	font-size: 14px;
 }
-.listingPrice{
+.listingPrice {
 	font-size: 20px;
 	margin-top: 10px;
 	font-weight: bold;
 }
-.originalDeal{
+.originalDeal {
 	margin-top: 5px;
 }
-.validDates{
+.validDates {
 	margin-top: 5px;
 }
 .hoursRemaining{
@@ -66,38 +95,41 @@
 	color: #000;
 	font-weight: bold;
 }
-.theDeal{
+.theDeal {
 	font-size: 25px;
 	margin-bottom: 10px;
 	font-weight: bold;
 }
-.listingButtons{
+.listingButtons {
 	margin: 10px auto;
-	width:85%;
+	width:90%;
 }
-@media only screen and (min-width: 960px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     /* iPad/tablet landscape */
-    .listingTile {
-		width: 23.7%;
-		border: 1px solid #ccc;
-		margin: 5px 0px 5px 10px;
-
-	}
-	.rightNav{
+	.listingTile {
+        margin: .5% 0 .5% 1%;
+        width: 24.25%;
+    }
+	.rightNav {
 		margin-right: 8px;
 	}
-	.leftNav{
+	.leftNav {
 		margin-left: 8px;
+	}
+	.interior_subNav {
+		margin:0 10px;
 	}
  
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     /* iPad/tablet Portrait */
-   .listingTile {
-		width: 32%;
-		border: 1px solid #ccc;
-		margin: 4px 0px 4px 8px;	
-	}
+    .listingTile, .listingTile:nth-child(4n+1) {
+        margin: 1% 0 1% 2%;
+        width: 32%;
+    }
+    .listingTile:nth-child(3n+1) {
+	    margin-left: 0;
+    }
 	.rightNav{
 		margin-right: 8px;
 	}
@@ -107,13 +139,13 @@
 }
 @media only screen and (max-width: 767px) {
     /* Mobile */
-	#subNav {
-		display: none;
-	}
 	#listingsContain {
 		width: auto;
 		padding: 5px 12px;
 		margin: 0 auto;
+	}
+	.leftNav{
+		margin-bottom: 10px;
 	}
 	.listingTile {
 		width: 100%;
@@ -124,7 +156,6 @@
 		padding-bottom:50px;
 		position:relative;
 	}
-
 	.listingImage {
 		margin: 10px auto;
 		float: left;
@@ -134,7 +165,7 @@
 	.listingImage img {
 		width:150px;
 	}
-   .listingInfo {
+    .listingInfo {
 		margin: 20px auto;
 		float: left;
 		width: 49%;
