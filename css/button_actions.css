@@ -90,9 +90,9 @@ button, .button {
 /*search button & magnifying glass*/
 button.inputSearchBtn {
 	position: absolute;
-	right: 0;
-	width: 32px;
-	height: 32px;
+	right: 0px;
+	width: 30px;
+	height: 30px;
 	padding: 0;
 	top: 0;
 	background: #3258b3;
@@ -101,8 +101,8 @@ button.inputSearchBtn {
 .searchMagGlass:before {
 	display: block;
 	position: absolute;
-	top: 17px;
-	left: 15px;
+	top: 16px;
+	left: 13px;
 	background: none repeat scroll 0% 0% #FFF;
 	width: 8px;
 	height: 2px;
@@ -121,11 +121,11 @@ button.inputSearchBtn {
 	content: "";
 	display: block;
 	position: absolute;
-	top: 7px;
-	left: 12px;
+	top: 6px;
+	left: 10px;
 	border: 2px solid #FFF;
-	width: 10px;
-	height: 10px;
+	width: 14px;
+	height: 14px;
 	border-radius: 50%;
 }
 
