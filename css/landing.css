@@ -140,22 +140,24 @@
     font-weight: bold;
     margin-top:7px;
 }   
+.pqInBlock {
+        font-size: 14px;
+        font-weight: bold;
+}
 .titleInBlock {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     margin-top:3px;
 }
-
-.largeListingBlock .titleInBlock {
-    font-size: 20px;
-    line-height: 18px;
-    margin-top:8px;
-}
-
 .addDealInBlock {
     font-size: 12px;
     text-transform: lowercase;
+    margin-top:8px;
+}
+.largeListingBlock .titleInBlock {
+    font-size: 20px;
+    line-height: 18px;
     margin-top:8px;
 }
 
@@ -253,12 +255,6 @@
     .dealInblock {
         font-size: 22px;
     }
-    .dealInblock .pqInBlock {
-        float: left;
-        font-size: 14px;
-        font-weight: bold;
-        margin-top: 8px;
-    }
     .titleInBlock {
         font-size: 12px;
         line-height: 15px;
@@ -266,8 +262,6 @@
     .addDealInBlock {
         font-size: 10px;
         margin-top:5px;
-    }
-    .additionalDealTablet {display:none;
     }
 	#LandingContain {
 		width:768px;
