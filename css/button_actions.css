@@ -1,0 +1,318 @@
+button, .button {
+	font-size: 13px;
+	text-transform: capitalize;
+	font-weight: normal;
+	border: 0;
+	background-color: black;
+	padding: 0;
+	cursor: pointer;
+	color: white;
+	outline: 0;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.primaryBtn {
+	height: 36px;
+	width: 100%;
+	text-align: center;
+	background: #3258b3;
+	cursor: pointer;
+	font-size: 14px;
+	margin-bottom:10px;
+}
+.secondaryBtn {
+	height: 36px;
+	width: 100%;
+	text-align: center;
+	background: #666;
+	cursor: pointer;
+	font-size: 14px;
+	margin-bottom:10px;
+}
+.primaryBtn:hover, .secondaryBtn:hover {
+	background:#ccc;
+}
+.prevPageBtn, .nextPageBtn, .heroPrev, .heroNext {
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+.heroPrev, .heroNext {height: 45px;
+	width: 45px;
+	background-color: rgba(0,0,0,0.5);
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+.prevPageBtn, .nextPageBtn {
+	width: 50px;
+	height: 90px;
+	background-color: #3258b3;
+	z-index: 10000;
+}
+
+.prevPageBtn {
+	position: absolute; 
+	top: 50%;
+	left:0;
+}
+
+.nextPageBtn {
+	position: absolute; 
+	top: 50%;
+	right:0;
+}
+
+.nextPageBtn:after {content:"";
+	width: 0;
+	height: 0;
+	border-bottom: 12px inset transparent;
+	border-left: 16px solid #fff;
+	border-top: 12px inset transparent;
+	position: absolute;
+	display: block;
+	top: 32px;
+	left: 18px;
+}
+
+.prevPageBtn:after {content:"";
+	width: 0;
+	height: 0;
+	border-bottom: 12px inset transparent;
+	border-right: 16px solid #fff;
+	border-top: 12px inset transparent;
+	position: absolute;
+	display: block;
+	top: 32px;
+	right: 18px;
+}
+
+/*search button & magnifying glass*/
+button.inputSearchBtn {
+	position: absolute;
+	right: 0px;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	top: 0;
+	background: #3258b3;
+	border: 0px;
+}
+.searchMagGlass:before {
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: 13px;
+	background: none repeat scroll 0% 0% #FFF;
+	width: 8px;
+	height: 2px;
+	-webkit-transform: rotate(130deg);
+	-moz-transform: rotate(130deg);
+	-ms-transform: rotate(130deg);
+	-o-transform: rotate(130deg);
+	-ms-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-webkit-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+	content: "";
+}
+.searchMagGlass:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	border: 2px solid #FFF;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+}
+
+/*other skins*/
+.skinDropdownTriangle {
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-left: 5px inset transparent;
+	border-right: 5px inset transparent;
+	border-top: 9px solid #3258b3;
+	text-indent: -900px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.skinDropdownTriangleUp {
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-left: 5px inset transparent;
+	border-right: 5px inset transparent;
+	border-bottom: 9px solid #3258b3;
+	text-indent: -900px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.zoomIcon {
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-left: 5px inset transparent;
+	border-right: 5px inset transparent;
+	border-top: 9px solid #fff;
+	text-indent: -900px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+/*close button*/
+.skinCloseBtn {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	height: 30px;
+	width: 30px;
+	border: 1px solid #999;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	text-indent: 999px;
+	overflow: hidden;
+	display: block;
+}
+.skinCloseBtn:hover {
+	opacity:0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.positionCloseBtn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.skinCloseBtn:before, .skinCloseBtn:after {
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-ms-transform-origin: center;
+	-moz-transform-origin: center;
+	-webkit-transform-origin: center;
+	-o-transform-origin: center;
+	transform-origin: center;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	content: "";
+	background: #999;
+	position: absolute;
+	display: block;
+}
+.skinCloseBtn:before {
+	width: 2px;
+	height: 20px;
+	top: 4px;
+	left: 13px;
+}
+.skinCloseBtn:after {
+	width: 20px;
+	height: 2px;
+	left: 4px;
+	top: 13px;
+
+}
+
+/*breadcrumb*/
+.breadCrumbContain {
+		margin: 20px 0 20px 0;
+		position:relative;
+}
+
+.breadcrumb {
+	margin-left:10px;
+}
+
+.breadcrumb:before {
+		content: "";
+		height: 0;
+		width: 0;
+		border-right: 5px solid #3258b3;
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent;
+		position: absolute;
+		left: 0;
+		top: 3px;
+}
+
+
+/*ratings and reviews*/
+.starRating {
+	background-image: url(../Images/star_ratings.png);
+    background-repeat: no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    height: 20px;
+    width: 98px;
+    cursor: pointer;
+}
+/* 0 stars */
+.rating_0_0, .rating_0, .rating_0_1, .rating_0_2 {
+	background-position: 0 0;
+}
+/* 0.5 stars */
+.rating_0_3, .rating_0_4,.rating_0_5, .rating_0_6, .rating_0_7 {
+	background-position: 0 -20px;
+}
+/* 1 star */
+.rating_0_8, .rating_0_9, .rating_1_0, .rating_1, .rating_1_1, .rating_1_2 {
+	background-position: 0 -40px;
+}
+/* 1.5 stars */
+.rating_1_3, .rating_1_4, .rating_1_5, .rating_1_6, .rating_1_7 {
+	background-position: 0 -60px;
+}
+/* 2 stars */
+.rating_1_8,.rating_1_9, .rating_2_0, .rating_2, .rating_2_1, .rating_2_2 {
+	background-position: 0 -80px;
+}
+/* 2.5 stars */
+.rating_2_3, .rating_2_4, .rating_2_5, .rating_2_6, .rating_2_7 {
+	background-position: 0 -100px;
+}
+/* 3 stars */
+.rating_2_8, .rating_2_9, .rating_3_0, .rating_3, .rating_3_1, .rating_3_2 {
+	background-position: 0 -120px;
+}
+/* 3.5 stars */
+ .rating_3_3, .rating_3_4, .rating_3_5, .rating_3_6, .rating_3_7 {
+	background-position: 0 -140px;
+}
+/* 4 stars */
+.rating_3_8, .rating_3_9, .rating_4_0, .rating_4, .rating_4_1, .rating_4_2 {
+	background-position: 0 -160px;
+}
+/* 4.5 stars */
+.rating_4_3, .rating_4_4, .rating_4_5, .rating_4_6, .rating_4_7 {
+	background-position: 0 -180px;
+}
+/* 5 stars */
+.rating_4_8, .rating_4_9, .rating_5_0, .rating_5 {
+	background-position: 0 -200px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.breadCrumbContain {
+			margin: 20px 0 20px 15px;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 2) {
+    /* when it's a high-resolution Android, or a retina device, like iPhone 4 and iPad 3 */
+	.starRating {
+		background-image:url(../Images/200/star_ratings_200.png);
+		-moz-background-size: 100px 220px;
+		-webkit-background-size: 100px 220px;
+		-o-background-size: 100px 220px;
+		background-size: 100px 220px;
+	}
+}
