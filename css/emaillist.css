@@ -14,31 +14,11 @@
 	margin: 20px 0;
 
 }
-.emailSearchBar{
+.emailForm .containSend{
 
 	display: inline-block;
 	
 }
-#sl_search_form_email{
-
-	margin-top: 10px;
-	margin-left:20px;
-
-
-}
-.sl_search_text_email
-{
-
-	width: 300px;
-	height: 30px;
-	padding-left: 5px;
-	border: 1px solid #C6C5C5;
-	background: white;
-	color: #000;
-	font-size: 14px;
-
-}
-
 #sl_search_form_email .arrow-search-email{
 
 position: relative;
@@ -103,13 +83,13 @@ border: none;
 	margin: 10px 0 0 0;
 
 }
-	.emailSearchBar{
+	.emailForm .containSend{
 
 		display: block;
 		margin-bottom: 10px;
 		
 	}
-	.emailSearchBar{
+	.emailForm .containSend{
 
 		display: block;
 		

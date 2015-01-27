@@ -87,48 +87,6 @@ button, .button {
 	right: 18px;
 }
 
-/*search button & magnifying glass*/
-button.inputSearchBtn {
-	position: absolute;
-	right: 0px;
-	width: 30px;
-	height: 30px;
-	padding: 0;
-	top: 0;
-	background: #3258b3;
-	border: 0px;
-}
-.searchMagGlass:before {
-	display: block;
-	position: absolute;
-	top: 16px;
-	left: 13px;
-	background: none repeat scroll 0% 0% #FFF;
-	width: 8px;
-	height: 2px;
-	-webkit-transform: rotate(130deg);
-	-moz-transform: rotate(130deg);
-	-ms-transform: rotate(130deg);
-	-o-transform: rotate(130deg);
-	-ms-transform-origin: left center;
-	-moz-transform-origin: left center;
-	-webkit-transform-origin: left center;
-	-o-transform-origin: left center;
-	transform-origin: left center;
-	content: "";
-}
-.searchMagGlass:after {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 6px;
-	left: 10px;
-	border: 2px solid #FFF;
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-}
-
 /*other skins*/
 .skinDropdownTriangle {
 	cursor: pointer;

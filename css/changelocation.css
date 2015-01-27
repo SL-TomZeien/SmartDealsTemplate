@@ -52,25 +52,11 @@
 	margin-right:10px;
 	margin-top: 10px;
 }
-.changeLocation_search_form {
-	border: 1px solid #ccc;
-	padding: 0;
-	position: relative;
+#searchStores .containSearch {
 	width: 280px;
-	height: 32px;
 	float:left;
 }
-.changeLocation_search_form  input {
-	border: none;
-	width: 85%;
-	padding: 6px;
-	margin: 0;
-	height: 30px;
-	color: #000000;
-	font-size: 14px;
-}
 .changeLocationBtn {
-	
 	margin:10px 0;
 	width:200px;
 }

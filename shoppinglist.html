@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/changelocation.css">
     <link rel="stylesheet" type="text/css" href="css/itemDetail.css">
     <link rel="stylesheet" type="text/css" href="css/helpOverlay.css">
+    <link rel="stylesheet" type="text/css" href="css/forms_and_inputs.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 
@@ -43,10 +44,10 @@
             
            <section class="emailForm">
                 <p class="emailInstructions">Enter comma seperated email addresses</p>
-                <form action='/search' id='sl_search_form_email' class="emailSearchBar">
-                    <input class='sl_search_text_email' value='Email address(es)' type='text' />
-                    <a class="emailSend">Send</a>
-               </form>
+               <form class="containSend">
+                   <input type="text" value="Example: Chicago, IL">
+                   <button type="submit"></button>
+              </form>
            </section>
            
             <section id="listingsContain">

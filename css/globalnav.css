@@ -70,24 +70,9 @@
 	position: static;
 }
 /*global nav - search*/
-.containSearch {
-	border: 1px solid #ccc;
-	padding: 0;
-	position: relative;
-	top: 7px;
-	width: 300px;
+.sl_globalNav .containSearch {
 	float: right;
-	height: 32px;
-	padding-right: 32px;
-}
-.containSearch input {
-	border: none;
-	width: 100%;
-	padding: 0 10px;
-	margin: 0;
-	color: #000000;
-	font-size: 14px;
-	line-height: 30px;
+	top: 7px;
 }
 @media only screen and (max-width: 1024px) {
     /* iPad/tablet Portrait AND Landscape */
@@ -106,12 +91,10 @@
 }
 @media only screen and (max-width: 767px) {
     /***** mobile Landscape AND Portrait *****/
-	.containSearch {
+	.sl_globalNav .containSearch {
 		width: auto;
 		float: none;
 		margin: 10px 0;
-		display: block;
-		height: 32px;
 		top: initial;
 	}
 	.currentAd_contain {

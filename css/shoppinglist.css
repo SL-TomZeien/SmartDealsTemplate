@@ -37,7 +37,7 @@
 	margin: 20px 0;
 }
 
-.emailSearchBar{
+.emailForm .containSend{
 	display: inline-block;
 	margin-top: 10px;
 	margin-left: 15px;
@@ -52,43 +52,6 @@
 	color: #000;
 	font-size: 14px;
 }
-.emailSend {
-	width: 30px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	border: 0;
-	text-indent: 999px;
-	overflow: hidden;
-}
-.emailSend:before {
-	content: "";
-	height: 1px;
-	width: 18px;
-	background: black;
-	position: absolute;
-	top: 50%;
-	right: 8px;
-}
-.emailSend:after {
-	content: "";
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-left: none;
-	border-bottom: 0;
-	position: absolute;
-	top: 50%;
-	right: 9px;
-	-ms-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	margin-top: -5px;
-}
-
 @media only screen and (max-width: 1024px) {
     /* iPad/tablet Portrait */
 	.savedDealsLabel {
@@ -112,7 +75,7 @@
 		display: inline-block;
 		margin: 10px 0 0 0;
 	}
-	.emailSearchBar {
+	.emailForm .containSend {
 		margin-bottom: 10px;
 	}
 	#sl_search_form_email {
