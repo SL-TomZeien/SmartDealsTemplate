@@ -46,7 +46,6 @@
 
 /*BBP sub navigation*/
 .bbpNavContain {
-	display: -ms-flex;
   	display: -webkit-flex;
   	display: flex;
 	margin-bottom:10px;
