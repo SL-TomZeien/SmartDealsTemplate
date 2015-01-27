@@ -1,0 +1,8 @@
+.shoplocal_container.fullscreen {
+    max-width: initial;
+    width: 90%;
+    margin-top: 25px;
+}
+.fullscreen #bbpwrapper {
+    width: 90%;
+}

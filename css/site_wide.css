@@ -46,11 +46,6 @@ a:hover, .stdLink:hover {
 	max-width:1000px;
 	margin:0 auto;
 }
-.shoplocal_container.fullscreen {
-    max-width: initial;
-    width: 90%;
-    margin-top: 25px;
-}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* iPad/tablet Portrait AND Landscape */
     .includeInTablet {
