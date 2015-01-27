@@ -1,12 +1,6 @@
 *:focus {
     outline: 0; /*remove blue outline of active elements in chrome*/
 }
-.includeInTablet, .includeInTabletLandscape, .includeInTabletPortrait, .includeInMobile, .includeInMobile_Inline, .includeInMobilePortrait_Inline {
-    display: none !important;
-}
-.excludeFromDesktop {
-    display: none !important;
-}
 .cb {
 	clear:both;
 }
@@ -46,56 +40,68 @@ a:hover, .stdLink:hover {
 	max-width:1000px;
 	margin:0 auto;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* iPad/tablet Portrait AND Landscape */
-    .includeInTablet {
-        display: block !important;
-    }
-    .includeInDesktop {
+@media only screen and (min-width: 1025px) {
+    /* desktop */
+    .excludeFromDesktop {
         display: none !important;
     }
-    .excludeFromTablet {
-        display: none !important;
-    }
-	.includeInDesktop {
+    .includeInTablet, .includeInTabletLandscape, .includeInTabletPortrait, .includeInMobile, .includeInMobilePortrait, .includeInMobileLandscape {
         display: none !important;
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* iPad/tablet Portrait AND Landscape */
+    .excludeFromTablet {
+        display: none !important;
+    }
+    .includeInDesktop, .includeInMobile, .includeInMobilePortrait, .includeInMobileLandscape {
+        display: none !important;
+    }
+}
 @media only screen and (min-width: 960px) and (max-width: 1024px) {
     /* iPad/tablet Landscape */
-    .includeInTabletLandscape {
-        display: block !important;
+    .excludeFromTabletLandscape {
+        display: none !important;
+    }
+    .includeInTabletPortrait {
+        display: none !important;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     /* iPad/tablet Portrait */
-    .includeInTabletPortrait {
-        display: block !important;
-    }
     .excludeFromTabletPortrait {
+        display: none !important;
+    }
+    .includeInTabletLandscape {
         display: none !important;
     }
 }
 @media only screen and (max-width: 767px) {
     /* mobile Landscape AND Portrait */
-    .includeInDesktop {
-        display: none !important;
-    }
     .excludeFromMobile {
         display: none !important;
     }
-    .includeInMobile {
-        display: block !important;
-    }
-    .includeInMobile_Inline {
-        display: inline;
+    .includeInDesktop, .includeInTablet, .includeInTabletPortrait, .includeInTabletLandscape {
+        display: none !important;
     }
 }
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /* mobile Landscape */
+    .excludeFromMobileLandscape {
+        display: none !important;
+    }
+    .includeInMobilePortrait {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 479px) {
     /* mobile Portrait */
-    .includeInMobilePortrait_Inline {
-        display: inline;
+    .excludeFromMobilePortrait {
+        display: none !important;
+    }
+    .includeInMobileLandscape {
+        display: none !important;
     }
 }
 
