@@ -1,0 +1,122 @@
+.listingTile {
+	margin: .75% 0 .75% 1.5%;
+	width: 23.875%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+}
+.listingTile:nth-child(4n+1) {
+	margin-left: 0;
+}
+.listingImage {
+	display: block;
+	margin: 10px auto;
+	width: 200px;
+	height: 200px;
+}
+.listingImage img {
+	width:100%;
+}
+.listingInfo{
+	margin: 20px auto;
+	width:90%;
+	height: 150px;
+}
+.listingTitle {
+	font-size: 14px;
+}
+.listingPrice {
+	font-size: 20px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.listingTile .originalDeal {
+	margin-top: 5px;
+}
+.listingTile .validDates {
+	margin-top: 5px;
+}
+.listingTile .hoursRemaining{
+	margin-top: 18px;
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+}
+.listingTile .theDeal {
+	font-size: 25px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.listingTile .listingButtons {
+	margin: 10px auto;
+	width:90%;
+}
+@media only screen and (max-width: 1024px) {
+    /* iPad/tablet landscape */
+	.listingTile {
+        margin: .5% 0 .5% 1%;
+        width: 24.25%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    /* iPad/tablet Portrait */
+    .listingTile, .listingTile:nth-child(4n+1) {
+        margin: 1% 0 1% 2%;
+        width: 32%;
+    }
+    .listingTile:nth-child(3n+1) {
+	    margin-left: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /* Mobile */
+	.listingTile {
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #ccc;
+		margin: 0;
+		float:none;
+		padding-bottom:50px;
+		position:relative;
+	}
+	.listingImage {
+		margin: 10px auto;
+		float: left;
+		width: 150px;
+		height:auto;
+	}
+	.listingImage img {
+		width:150px;
+	}
+    .listingInfo {
+		margin: 20px auto;
+		float: left;
+		width: 49%;
+		height:auto;
+	}
+	.listingButtons{
+		width: 100%;
+		clear: both;
+		left: 0;
+		position: absolute;
+		bottom: 0;
+	}
+	.listingButtons .primaryBtn {
+		height: 36px;
+		width: 49%;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 0 10px;
+	}
+	.listingButtons .secondaryBtn {
+		height: 36px;
+		width: 49%;
+		position: absolute;
+		left: 51%;
+		text-align: center;
+		bottom: 0;
+	}
+}

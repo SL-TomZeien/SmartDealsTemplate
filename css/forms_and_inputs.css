@@ -1,4 +1,4 @@
-/* default styles for search input. Scope changes to this (width, position, etc.) to other views in their respective CSS files */
+/* default styles for search input. When style changes (width, position, etc.) are needed for a specific view, scope them inside their respective CSS files */
 .containSearch, .containSend {
 	border: 1px solid #ccc;
 	padding: 0;
@@ -16,6 +16,8 @@
 	font-size: 14px;
 	line-height: 30px;
 }
+
+/*styling for search form buttons */
 .containSearch button {
 	position: absolute;
 	right: 0px;
@@ -56,6 +58,8 @@
 	height: 14px;
 	border-radius: 50%;
 }
+
+/*styling for email and other 'send' input form buttons */
 .containSend button {
 	width: 30px;
 	position: absolute;
