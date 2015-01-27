@@ -21,11 +21,11 @@
 }
 
 /*no content*/
-#noContent {
+#NoContent{
     width:100%;
     margin:30px auto;
 }
-#noContent h2 {
+#NoContent h2 {
     margin:20px 0 10px 0;
     font-weight:normal;
     font-family: 'Gotham SSm 5r','Gotham 5r',Helvetica,Arial,sans-serif;

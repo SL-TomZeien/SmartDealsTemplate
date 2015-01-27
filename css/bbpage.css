@@ -6,13 +6,16 @@
 	background:#eee;
 	position: relative;
 }
-#bbpwrapper {
+.bbpwrapper {
 	margin: 0 auto;
 	outline: 1px solid #ccc;
 	overflow: hidden; 
 	width: 938px; /*for template only*/
 	height: 1200px; /*for template only*/
 	background:#666; /*for template only*/
+}
+.fullscreen .bbpwrapper {
+	width: 90%;
 }
 /*ad selector*/
 .adSelector {
@@ -136,11 +139,13 @@
 }
 @media only screen and (max-width: 767px) {
     /* mobile Landscape AND Portrait */
-    #bbpwrapper {
+    .bbpwrapper {
     	outline: none;
 		width: 150px; /*for template without data only*/
 		height: auto; /*for template without data only*/
-		background:none; /*for template without data only*/
+		background:none;
+		margin: 0 auto;
+        overflow: visible !important; /*for template without data only*/
     }
 	.promotionPageSelected {
 		border: 1px solid #ccc;
@@ -163,11 +168,7 @@
         font-weight: bold;
         padding: 7px 0 0 10px;
     }
-    .bbpWrapper {
-        width: 150px;
-        margin: 0 auto;
-        overflow: visible !important;
-    }
+
     .bbpContainer {
         width: 300px;
         margin: 0 auto;

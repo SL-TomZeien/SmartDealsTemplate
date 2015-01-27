@@ -1,4 +1,4 @@
-#storeLocations {
+#StoreLocations {
 	float: left;
 	width: 100%;
 }
@@ -6,7 +6,7 @@
 	border-top: 1px solid #ccc;
 	max-width: 1000px;
 }
-#myStore {
+#MyStore {
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
 }
@@ -21,7 +21,7 @@
 	margin-top: 20px;
 	float:left;
 }
-#storesNearby {
+#StoresNearby {
 	margin-top: 20px;
 }
 .otherStore {
@@ -44,7 +44,7 @@
 	font-weight: bold;
 	margin: 5px 0;
 }
-#searchStores {
+#SearchStores {
 	margin: 15px 0;
 }
 .storesNearSearchTitle {
@@ -70,7 +70,7 @@
 		margin-left:15px;
 		margin-right:15px;
 	}
-	#searchStores {
+	#SearchStores {
 		margin: 15px 0 0 15px;
 	}
 }

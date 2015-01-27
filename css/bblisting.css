@@ -46,7 +46,7 @@
 	padding: 5px 80px 5px 0px ;
 	font-size: 12px;
 }
-#listingsContain{
+#ListingsContain{
 	margin: 10px auto 0 auto;
 	width: 100%;
 }
@@ -62,6 +62,8 @@
 	margin-left: 0;
 }
 .listingImage {
+
+	display: block;
 	margin: 10px auto;
 	width: 200px;
 	height: 200px;
