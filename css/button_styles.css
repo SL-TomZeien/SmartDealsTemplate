@@ -1,4 +1,4 @@
-button, .button {
+.button {
 	font-size: 13px;
 	text-transform: capitalize;
 	font-weight: normal;
@@ -181,16 +181,16 @@ button, .button {
 }
 
 /*breadcrumb*/
-.breadCrumbContain {
+.sl_breadcrumbContain {
 		margin: 20px 0 20px 0;
 		position:relative;
 }
 
-.breadcrumb {
+.sl_breadcrumb {
 	margin-left:10px;
 }
 
-.breadcrumb:before {
+.sl_breadcrumb:before {
 		content: "";
 		height: 0;
 		width: 0;

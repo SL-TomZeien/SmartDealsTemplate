@@ -1,14 +1,10 @@
 *:focus {
     outline: 0; /*remove blue outline of active elements in chrome*/
 }
-.cb {
-	clear:both;
-}
-.pointer {
-    cursor: pointer;
-}
-.bold {
-	font-weight: bold;
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
 	font-family:Arial, Helvetica, sans-serif;
@@ -18,22 +14,21 @@ body {
 	margin: 0;
 	padding: 0;
 }
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+.cb {
+	clear:both;
 }
-a {
-	color:#3258b3;
-	text-decoration:underline;
-	cursor:pointer;
+.pointer {
+    cursor: pointer;
+}
+.bold {
+	font-weight: bold;
 }
 .stdLink {
 	color:#3258b3;
 	text-decoration:underline;
 	cursor:pointer;
 }
-a:hover, .stdLink:hover {
+.stdLink:hover {
     text-decoration:none;
 }
 .shoplocal_container {
