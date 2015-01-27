@@ -14,6 +14,9 @@
 	height: 1200px; /*for template only*/
 	background:#666; /*for template only*/
 }
+.fullscreen #bbpwrapper {
+	width: 90%;
+}
 /*ad selector*/
 .adSelector {
 	margin:20px 0 20px 0;
