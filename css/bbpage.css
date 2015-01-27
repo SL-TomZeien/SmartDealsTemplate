@@ -43,41 +43,28 @@
 
 /*BBP sub navigation*/
 .bbpNavContain {
+  	display: -webkit-flex;
+  	display: flex;
+	margin-bottom:10px;
+}
+.validDatesOfCircular {
+	flex: 1.5;
+}
+.containPageSortOptions {
+	flex: 1;
 	position:relative;
 }
-.unitA {
-	display: inline-block;
-	font-size: 12px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	text-align: left;
-	margin-bottom: 10px;
-}
-.unitB {
-	float: right;
-	width: 50%;
-	position: relative;
-	top: 3px;
-	margin-bottom: 15px;
-}
-.pageContolContain {float: right;
-	position: relative;
+.pageContolContain {
+	flex: 1;
+	text-align:right;
 }
 
 /*page dropdown*/
-.containPageSortOptions {
-	float: left;
-	position: relative;
-	white-space: nowrap;
-	height:20%;
-}
-.activePageSortOption, .activePageSortOptionOpen {
+.activePageSortOption {
 	font-size: 12px;
 	padding-right: 16px;
 	cursor: pointer;
 	white-space: nowrap;
-	text-align: left;
 	margin-right:6px;
 }
 .activePageSortOption:after {		
@@ -88,19 +75,8 @@
 		border-right: 5px inset transparent;
 		border-top: 9px solid #3258b3;
 		position: absolute;
-		right: 0;
 		margin-top: 2px;
-}
-.activePageSortOptionOpen:after {		
-		content: "";
-		height: 0;
-		width: 0;
-		border-left: 5px inset transparent;
-		border-right: 5px inset transparent;
-		border-bottom: 9px solid #3258b3;
-		position: absolute;
-		right: 0;
-		margin-top: 2px;
+		margin-left:10px;
 }
 .posDropdownTriangle {
 	position: absolute;
@@ -113,14 +89,14 @@
 	right: 0;
 }
 .pageDropdownOptions {
-	position:absolute;
-	top:22px;
-	left:-10px;
 	background:#eee;
 	border:1px solid #ccc;
 	z-index:100;
 	height:170px;
 	overflow-y:scroll;
+	position:absolute;
+	top:20px;
+	left:-10px;
 }
 .pageSortOption {
 	width:110px;
@@ -135,10 +111,8 @@
 	.adSelector {
 		margin-left:15px;
 	}
-	.unitA {
+	.bbpNavContain {
 		margin-left:15px;
-	}
-	.unitB {
 		margin-right:15px;
 	}
 }
