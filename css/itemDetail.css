@@ -7,11 +7,11 @@
 	-o-box-shadow: 8px 8px 15.48px 2.52px rgba(0,0,0,0.34);
 	box-shadow: 8px 8px 15.48px 2.52px rgba(0,0,0,0.34);
 	position:relative;
-	padding-bottom: 10px;
+	margin: auto;
+	padding: 60px 40px 20px;
 }
-
 .leftColumn_IDP {
-	padding: 62px 44px 0 44px;
+	padding: 0 40px 0 0;
 	vertical-align: top;
 	float:left;
 }
@@ -19,7 +19,6 @@
 	width: 325px;
 }
 .viewLarger {
-	
 	text-align: center;
 	margin-top: 5px;
 }
@@ -64,18 +63,16 @@
 .skinPrintIcon {
 	background-position: -200px -400px;
 }
-
 .rightColumn_IDP {
-	padding: 62px 0 0 0;
+	padding: 0;
 	vertical-align: top;
 	height: 500px;
-	width:485px;
+	width:453px;
 	float:right
 }
 .scrollable {
 	height: 500px;
 	margin: 0;
-	padding: 0 44px 0 0;
 	overflow: auto;
 }
 .itemTitle {
@@ -145,7 +142,7 @@
 		width: 749px;
 	}
 	.rightColumn_IDP {
-		width:336px;
+		width:304px;
 	}
 }
 @media only screen and (max-width: 767px) {
@@ -168,9 +165,9 @@
 	.scrollable {
 		height: auto;
 	}
-	.IDPimageContain {		
+	.itemImage {
 		max-width: 325px;
-		margin-bottom: 25px;
+		width: 100%;
 	}
 	.containSocialShareIDP {
 		margin:15px 0;
