@@ -1,4 +1,4 @@
-#entryContain {
+#EntryContain {
     width: auto;
     margin: 15px auto;
 }
@@ -16,7 +16,7 @@
 	font-size: 14px;
 	margin: 0 auto;
 }
-.entryContain .containSearch {
+#EntryContain .containSearch {
 	margin:10px auto;
 }
 
