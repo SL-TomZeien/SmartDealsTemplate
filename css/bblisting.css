@@ -9,12 +9,16 @@
 	width: 100%;
 }
 .categoryOptions {
-	min-width:110px;
-	height:170px;
+	left:-65px;
+	width:170px;
+	max-height:200px;
 }
 .sortOptions {
-	width:110px;
+	left:-60px;
+	width:145px;
+	max-height:200px;
 }
+
 @media only screen and (max-width: 1024px) {
     /* iPad/tablet landscape */
 	.rightNav {

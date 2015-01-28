@@ -35,6 +35,7 @@
 }
 .sortOption {
 	padding:10px;
+	white-space:normal;
 }
 .sortOption:hover {
 	background:#fff;
