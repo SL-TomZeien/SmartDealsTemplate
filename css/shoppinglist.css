@@ -37,7 +37,7 @@
 	margin: 20px 0;
 }
 
-.emailForm .containSend{
+.emailForm .sendContain{
 	display: inline-block;
 	margin-top: 10px;
 	margin-left: 15px;
@@ -75,7 +75,7 @@
 		display: inline-block;
 		margin: 10px 0 0 0;
 	}
-	.emailForm .containSend {
+	.emailForm .sendContain {
 		margin-bottom: 10px;
 	}
 	#sl_search_form_email {
