@@ -64,22 +64,12 @@
 }
 
 /************** template 1 ****************/
-.landingTemplate_LEST, .landingTemplate_LESI, .landingTemplate_IEST, .landingTemplate_ISST, .landingTemplate_LSSI{
+.landingTemplate_LSSI{
     width: 1000px;
     padding: 0;
 }
-
-
 
 /************** template 2 ****************/
-.landingTemplate_SSESTSS, .landingTemplate_SSESISS, .landingTemplate_SSSSISS{
-    width: 1000px;
-    padding: 0;
-}
-
-
-
-/************** template 3 ****************/
 .landingTemplate_SWS{
      width: 1000px;
 }
@@ -90,18 +80,6 @@
     max-height: 232px;
 }
 
-
-
-/************** template 4 ****************/
-.landingTemplate_SSSS{
-    width: 1000px;
-
-}
-
-.landingTemplate_SSSS > div{
-    float: left;
-    margin: 9px;
-}
 
 
 
@@ -136,16 +114,12 @@
 	}
 
 	/************** template 1 ****************/
-	.landingTemplate_LEST, .landingTemplate_LESI, .landingTemplate_IEST, .landingTemplate_ISST, .landingTemplate_LSSI{
+	.landingTemplate_LSSI{
 		width: 750px;
 		margin: 0 auto;
 	}
+
 	/************** template 2 ****************/
-	.landingTemplate_SSESTSS, .landingTemplate_SSESISS, .landingTemplate_SSSSISS{
-		width: 750px;
-		margin: 0 auto;
-	}
-	/************** template 3 ****************/
 	.landingTemplate_SWS{
 		 width: 750px;
 		margin: 0 auto;
@@ -153,15 +127,6 @@
 
 	.landingTemplate_SWS > div{
 		margin: 7px 7px 0 7px;
-	}
-	/************** template 4 ****************/
-	.landingTemplate_SSSS{
-		width: 750px;
-		margin: 0 auto;
-	}
-
-	.landingTemplate_SSSS > div{
-		margin: 7px;
 	}
 }
 
@@ -196,31 +161,18 @@
 	}
 
 	/************** template 1 ****************/
-	.landingTemplate_LEST, .landingTemplate_LESI, .landingTemplate_IEST, .landingTemplate_ISST, .landingTemplate_LSSI{
+	.landingTemplate_LSSI{
 		width: auto;
 		padding: 0 14px;
 	}
+
 	/************** template 2 ****************/
-	.landingTemplate_SSESTSS, .landingTemplate_SSESISS, .landingTemplate_SSSSISS{
-		width: auto;
-		padding: 0 14px;
-	}
-	/************** template 3 ****************/
 	.landingTemplate_SWS{
 		width: auto;
 		padding: 0 14px;
 	}
 
 	.landingTemplate_SWS > div{
-		margin: 14px 0 0 0;
-	}
-	/************** template 4 ****************/
-	.landingTemplate_SSSS{
-		width: auto;
-		padding: 0 14px;
-	}
-
-	.landingTemplate_SSSS > div{
 		margin: 14px 0 0 0;
 	}
 
