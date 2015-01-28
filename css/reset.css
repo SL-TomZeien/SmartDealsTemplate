@@ -80,7 +80,7 @@ input, select {
 .hcenter{margin:0 auto;}
 
 .tl{text-align:left}.tr{text-align:right}.tc{text-align:center}
-.bold{font-weight:bold}.italic{font-style:italic}.normal{font-weight:normal}
+.bold, strong{font-weight:bold}.italic{font-style:italic}.normal{font-weight:normal}
 
 .on, .displayon{display: block; visibility: visible;}
 .off, .displayoff{display: none; visibility: hidden;}

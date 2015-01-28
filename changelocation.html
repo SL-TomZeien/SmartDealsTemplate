@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/bblisting.css">
     <link rel="stylesheet" type="text/css" href="css/shoppinglist.css">
     <link rel="stylesheet" type="text/css" href="css/changelocation.css">
+    <link rel="stylesheet" type="text/css" href="css/storeTile.css">
+    <link rel="stylesheet" type="text/css" href="css/modals.css">
     <link rel="stylesheet" type="text/css" href="css/itemDetail.css">
     <link rel="stylesheet" type="text/css" href="css/helpOverlay.css">
     <link rel="stylesheet" type="text/css" href="css/forms_and_inputs.css">
@@ -32,63 +34,52 @@
             <section id="StoreLocations">
                     <article id="MyStore">
                         <p class="locationTitle">My Store</p>
-                            <div class="storeInfo">
+                            <article class="storeTile">
                                 <p class="storeName">Store Name 1</p>
                                 <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
                                 <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
                                 <button class="button secondaryBtn changeLocationBtn">Keep as my store</button>
                                 <p class="storeHours">Store Hours:</p>
                                 <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
-                            </div>
-                           <div class="cb"></div>
-                     </article><!--end myStore-->
-                     <article id="StoresNearby">
+                            </article>
+                     </section><!--end myStore-->
+                     <section id="StoresNearby">
                         <p class="locationTitle">Stores Nearby</p>
-                            <div class="otherStore">
-                                <div class="storeInfo">
-                                    <p class="storeName">Store Name 2</p>
-                                    <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
-                                    <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
-                                    <button class="button secondaryBtn changeLocationBtn">Make This My Store</button>
-                                    <p class="storeHours">Store Hours:</p>
-                                    <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
-                                </div>
-                                <div class="cb"></div>
-                            </div>
-                             <div class="otherStore">
-                                <div class="storeInfo">
-                                    <p class="storeName">Store Name 3</p>
-                                    <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
-                                    <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
-                                    <button class="button secondaryBtn changeLocationBtn">Make This My Store</button>
-                                    <p class="storeHours">Store Hours:</p>
-                                    <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
-                                </div>
-                                <div class="cb"></div>
-                            </div>
-                             <div class="otherStore">
-                                <div class="storeInfo">
-                                    <p class="storeName">Store Name 4</p>
-                                    <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
-                                    <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
-                                    <button class="button secondaryBtn changeLocationBtn">Make This My Store</button>
-                                    <p class="storeHours">Store Hours:</p>
-                                    <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
-                                </div>
-                                <div class="cb"></div>
-                            </div>
-                    </article><!--end storesNearby-->
+                            <article class="storeTile">
+                                <p class="storeName">Store Name 2</p>
+                                <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
+                                <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
+                                <button class="button secondaryBtn changeLocationBtn">Make This My Store</button>
+                                <p class="storeHours">Store Hours:</p>
+                                <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
+                            </article>
+                             <article class="storeTile">
+                                <p class="storeName">Store Name 3</p>
+                                <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
+                                <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
+                                <button class="button secondaryBtn changeLocationBtn">Make This My Store</button>
+                                <p class="storeHours">Store Hours:</p>
+                                <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
+                            </article>
+                             <article class="storeTile">
+                                <p class="storeName">Store Name 4</p>
+                                <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
+                                <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
+                                <button class="button secondaryBtn changeLocationBtn">Make This My Store</button>
+                                <p class="storeHours">Store Hours:</p>
+                                <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
+                            </article>
+                    </section><!--end storesNearby-->
                
-                    <article id="SearchStores">
+                    <section id="SearchStores">
                         <p class="storesNearSearchTitle">Search stores near:</p>
                         <div class="searchContain">
                             <input type="text" value="Example: Chicago, IL">
                             <button type="submit"></button>
                         </div>
-                    </article><!--end searchStore-->
+                    </section><!--end searchStore-->
                 </section><!--end storeLocations-->
     	</main><!--end shoplocal_container-->
-  	    <div class="cb"></div> 
      
 </body>
 </html>

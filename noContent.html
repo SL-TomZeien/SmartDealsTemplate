@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/bblisting.css">
     <link rel="stylesheet" type="text/css" href="css/shoppinglist.css">
     <link rel="stylesheet" type="text/css" href="css/changelocation.css">
+    <link rel="stylesheet" type="text/css" href="css/storeTile.css">
     <link rel="stylesheet" type="text/css" href="css/itemDetail.css">
     <link rel="stylesheet" type="text/css" href="css/helpOverlay.css">
     <link rel="stylesheet" type="text/css" href="css/forms_and_inputs.css">
@@ -28,63 +29,44 @@
     <main class="shoplocal_container">
     
         <div id="NoContent">
-            <div class="noContentTopContain">
+            <section class="noContentTopContain">
                 <h2>There are no deals available for this location.</h2>
                 <h2 class="anotherLocation">
-                    Please enter another <span class="bold">City</span>, <span class="bold">State</span> or <span class="bold">Zip Code</span>.
+                    Please enter another <strong>City</strong>, <strong>State</strong> or <strong>Zip Code</strong>.
                 </h2>
             
-                <section>
-                    <div class="searchContain">
-                        <input type="text" value="Example: Chicago, IL">
-                        <button type="submit" class="button inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
-                    </div>
-                </section><!--end noContentSearch-->
-            </div><!--end noContentTopContain-->
-        
-            <div class="cb"></div>
-            
+                <div class="searchContain">
+                    <input type="text" value="Example: Chicago, IL">
+                    <button type="submit" class="button inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
+                </div>
+            </section><!--end noContentTopContain-->
+                    
             <section class="otherStoresBottom">
                 <span class="nearbyLabel_noContent">Or check out these other Shopluxe locations near you:</span>
-                <article class="noContent_otherStoresUnit">
-                    <div class="noContentStoreInfo">
-                        <span class="storeName">ShopLuxe Chicago</span>
-                        <p class="storeAddress">
-                            6125 E. State St.
-                            Rockford,
-                            IL
-                            61108
-                        </p>
-                        <div class="storePhone">
-                            <a class="stdLink" href="tel:(815) - 262-0837">
-                                (815) 262-0837
-                            </a>
-                        </div>
-                        <a class="stdLink">
-                        	<button type="button" class="button secondaryBtn noContentButton">Make this my store</button>
-                        </a>
-                    </div>
-                    <div class="cb"></div>
-                 </article>
-                 <article class="noContent_otherStoresUnit">
-                    <div class="noContentStoreInfo">
-                        <span class="storeName">ShopLuxe Chicago</span>
-                        <p class="storeAddress">
-                            6125 E. State St.
-                            Rockford,
-                            IL
-                            61108
-                        </p>
-                        <div class="storePhone">
-                            <a class="stdLink" href="tel:(815) - 262-0837">
-                                (815) 262-0837
-                            </a>
-                        </div>
-                        <button type="button" class="button secondaryBtn noContentButton">Make this my store</button></a>
-                    </div>
-                     <div class="cb"></div>
-                    </article>
-                </div>  
+                <article class="storeTile">
+                    <p class="storeName">Store Name 2</p>
+                    <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
+                    <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
+                    <button class="button secondaryBtn changeLocationBtn">Make This My Store</button>
+                    <p class="storeHours">Store Hours:</p>
+                    <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
+                </article>
+                <article class="storeTile">
+                    <p class="storeName">Store Name 2</p>
+                    <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
+                    <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
+                    <button class="button secondaryBtn changeLocationBtn">Make This My Store</button>
+                    <p class="storeHours">Store Hours:</p>
+                    <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
+                </article>
+                <article class="storeTile">
+                    <p class="storeName">Store Name 2</p>
+                    <address class="storeAddress">2140 N. Elston Ave., Chicago, IL 60614</address>
+                    <a class="stdLink"><p class="storePhone">(773) 342-9032</p></a>
+                    <button class="button secondaryBtn changeLocationBtn">Make This My Store</button>
+                    <p class="storeHours">Store Hours:</p>
+                    <p class="hours"> M: 9am-10pm; TU: 9am-10pm; W: 9am-10pm; TH: 9am-10pm; F: 9am-11pm; SA: 8am-11pm; SU: 9am-9pm</p>
+                </article>
             </section> 
         </div>
         

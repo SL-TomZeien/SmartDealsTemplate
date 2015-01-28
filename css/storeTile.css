@@ -1,0 +1,21 @@
+.storeTile {
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+}
+.storeName {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: bold;
+}
+.storePhone {
+	margin-top: 10px;
+}
+.storeHours {
+	font-size: 13px;
+	font-weight: bold;
+	margin: 5px 0;
+}
+.changeLocationBtn {
+	margin:10px 0;
+	width:200px;
+}
