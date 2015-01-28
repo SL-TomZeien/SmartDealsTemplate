@@ -17,31 +17,20 @@
 .fullscreen .bbpwrapper {
 	width: 90%;
 }
-/*ad selector*/
 .adSelector {
-	margin:20px 0 20px 0;
+	margin-top:20px;
 }
-.nowViewingLabel {
-	float: left;
-	font-weight:bold;
-	font-size: 14px;
-	text-align: right;
-	padding: 0 5px 0 0;
+
+.pageOptions {
+	min-width:110px;
+	height:170px;
+	left:50%;
+	-ms-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
 }
-.containNowViewingOptions {
-	float: left;
-	position: relative;
-	white-space: nowrap;
-}
-.nowViewingOption {
-	padding: 0 16px 0 0;
-	font-size: 14px;
-	width: auto;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	position: relative;
-	cursor:pointer;
+.adSelectOptions {
+	min-width:150px;
 }
 
 /*BBP sub navigation*/
@@ -49,73 +38,18 @@
   	display: -webkit-flex;
   	display: flex;
 	margin-bottom:10px;
+	margin-top:25px;
 }
 .validDatesOfCircular {
 	-webkit-flex: 1; /* Safari 6.1+ */
     -ms-flex: 1; /* IE 10 */ 
 	flex: 1;
 }
-
 .pageControlContain {
 	-webkit-flex: 1; /* Safari 6.1+ */
     -ms-flex: 1; /* IE 10 */ 
 	flex: 1;
 	text-align:right;
-}
-
-/*page dropdown*/
-.containPageSortOptions {
-	text-align:center;
-	position:relative;
-
-}
-.activePageSortOption {
-	font-size: 12px;
-	padding-right: 16px;
-	cursor: pointer;
-	white-space: nowrap;
-	margin-right:6px;
-}
-.activePageSortOption:after {		
-	content: "";
-	height: 0;
-	width: 0;
-	border-left: 5px inset transparent;
-	border-right: 5px inset transparent;
-	border-top: 9px solid #3258b3;
-	position: absolute;
-	margin-top: 2px;
-	margin-left:10px;
-}
-.posDropdownTriangle {
-	position: absolute;
-	top: 3px;
-	right: 0;
-}
-.posDropdownTriangleUp {
-	position: absolute;
-	top: 2px;
-	right: 0;
-}
-.pageDropdownOptions {
-	background:#eee;
-	border:1px solid #ccc;
-	z-index:100;
-	height:170px;
-	overflow-y:scroll;
-	position:absolute;
-	left:50%;
-	top:20px;
-	-ms-transform:translateX(-50%);
-	-webkit-transform:translateX(-50%);
-	transform:translateX(-50%);
-}
-.pageSortOption {
-	width:110px;
-	padding:10px;
-}
-.pageSortOption:hover {
-	background:#fff;
 }
 
 @media only screen and (max-width: 1024px) {

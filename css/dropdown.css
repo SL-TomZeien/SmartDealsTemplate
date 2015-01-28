@@ -1,4 +1,11 @@
-.containOptions {
+.dropdownLabel {
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: right;
+	padding: 0 5px 0 0;
+}
+.optionsContain {
 	float: left;
 	position: relative;
 	white-space: nowrap;
@@ -15,6 +22,20 @@
 }
 .posDropdownTriangle {
 	position: absolute;
-	top: 3px;
+	top: 4px;
 	right: 0;
+}
+.dropdownOptions {
+	background:#eee;
+	border:1px solid #ccc;
+	z-index:100;
+	overflow-y:scroll;
+	position:absolute;
+	top:22px;
+}
+.sortOption {
+	padding:10px;
+}
+.sortOption:hover {
+	background:#fff;
 }

@@ -18,40 +18,6 @@
 #LandingContain {margin-top:20px;
 }
 
-
-/*Category dropdown*/
-.categoryDropdown {
-	margin:0 0 20px 0;
-	float:left;
-}
-.categoryViewingLabel {
-	float: left;
-	font-weight:bold;
-	font-size: 14px;
-	text-align: right;
-	padding: 0 5px 0 0;
-}
-.containCategoryOptions {
-	float: left;
-	position: relative;
-	white-space: nowrap;
-}
-.categoryOption {
-	padding: 0 16px 0 0;
-	font-size: 14px;
-	width: auto;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	position: relative;
-	cursor:pointer;
-}
-.posCategoryDropdownTriangle {
-	position: absolute;
-	top: 3px;
-	right: 0;
-}
-
 /*help box*/
 .helpContainer {
 	float:right;

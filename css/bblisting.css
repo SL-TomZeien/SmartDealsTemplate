@@ -4,51 +4,16 @@
 .rightNav{
 	float:right;
 }
-
-/*sort by dropdown*/
-.sortByLabel {
-	float: left;
-	font-weight:bold;
-	font-size: 14px;
-	text-align: right;
-	padding: 0 5px 0 0;
-}
-.containSortOptions {
-	float: left;
-	position: relative;
-	white-space: nowrap;
-}
-.sortOption {
-	padding: 0 16px 0 0;
-	font-size: 14px;
-	width: auto;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	position: relative;
-	cursor:pointer;
-}
-.posSortDropdownTriangle {
-	position: absolute;
-	top: 3px;
-	right: 0;
-}
-.chooseCollection{
-	float: left;
-	margin-top: 5px;
-	font-size: 14px;
-}
-.selectCollection{
-	float: left;
-	margin-left: 10px;
-}
-.chooseOption{
-	padding: 5px 80px 5px 0px ;
-	font-size: 12px;
-}
 #ListingsContain{
 	margin: 10px auto 0 auto;
 	width: 100%;
+}
+.categoryOptions {
+	min-width:110px;
+	height:170px;
+}
+.sortOptions {
+	width:110px;
 }
 @media only screen and (max-width: 1024px) {
     /* iPad/tablet landscape */
