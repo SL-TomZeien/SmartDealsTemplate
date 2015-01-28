@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/site_wide.css">
     <link rel="stylesheet" type="text/css" href="css/buttons_and_icons.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/globalnav.css">
     <link rel="stylesheet" type="text/css" href="css/entry.css">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/changelocation.css">
     <link rel="stylesheet" type="text/css" href="css/itemDetail.css">
     <link rel="stylesheet" type="text/css" href="css/helpOverlay.css">
+    <link rel="stylesheet" type="text/css" href="css/forms_and_inputs.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 
@@ -73,16 +75,17 @@
         
         <div class="onBoardingBack excludeFromMobile"></div>
         
-           <nav> <!--begin global nav-->
+       
+        <nav class="sl_globalNav"> <!--begin global nav-->
             <div class="globalNav_rowOne">
                     <div class="locationContain_globalNav">
-                        <div class="currentAd_contain">
+                        <div class="currentAdContain">
                             <span class="currentAd_Title">Today's Ad for</span>
                             <address class="currentStoreInfo">1543 Caballo Road,Truth or Consequences, NM 87901</address>
                         </div>
                         <div>
                             <span class="excludeFromMobile">Looking for another location?</span>
-                            <a href="#">Find another store</a>
+                            <a class="stdLink" href="#">Find another store</a>
                         </div>
                     </div>
                 <div class="savedDeals_globalNav">
@@ -93,9 +96,9 @@
             </div>
             
             <div class="globalNav_rowTwo">
-                    <div class="containSearch">
+                     <div class="searchContain">
                         <input type="text" value="Search Deals">
-                        <button type="submit" class="button inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
+                    	<button type="submit" class="button inputSearchBtn searchMagGlass posMagGlassForSearch"></button>
                     </div>
                     <div class="tabsContain">
                         <div class="globalNavTab">Browse Ad Pages</div>
@@ -105,20 +108,20 @@
             </div>
         </nav><!--end global nav-->
         
-            <section id="LandingContain">
+           <section id="LandingContain">
 
               <section class="landingPageControls">
-              	<article class="categoryDropdown">
-                    <div class="categoryViewingLabel">
-                       Viewing:
-                    </div>
-                    <div class="containCategoryOptions">
-                          <div class="categoryOption">
-                                All Categories
-                          </div>
-                          <div class="posCategoryDropdownTriangle skinDropdownTriangle"></div>
-                    </div>
-        		</article><!-- end categoryDropdown -->
+            	<article class="categoryDropdown">
+                        <div class="dropdownLabel">
+                           Viewing:
+                        </div>
+                        <div class="optionsContain">
+                              <div class="activeOption">
+                                    All Categories
+                              </div>
+                              <div class="posDropdownTriangle skinDropdownTriangle"></div>
+                        </div>
+                    </article>
                
                 <article class="helpContainer excludeFromMobile">
                     <span class="helpMessage">Help</span><span class="helpBox">?</span>
@@ -127,71 +130,25 @@
               
               <div class="cb"></div>
                             
-                 <section id="GridContain">
+               <section id="GridContain">
                     <article class="firstTemplate">
                       <div class="landingTemplate_LSSI cb">
-                       <div class="largeBlock">
-                          <div class="offerCount">
-                              <p class="countNumber">4</p>
-                              <p>DEALS</p>
-                          </div>
-                              <img class="imageContain" src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
-                          <h2>
-                              House & Home
-                          </h2>
-                      </div>
-                      <div class="ss_holder">
-                      <div class="topBlock">
-                          <div class="smallBlock">
-                              <div class="offerCount">
-                                  <p class="countNumber">1</p>
-                                  <p>DEAL</p>
-                              </div>
-                              <img class="imageContain" src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
-                          <h2>
-                              Clothing
-                          </h2>
-                          </div>
-                      </div>
-                          <div class="smallBlock">
-                              <div class="offerCount">
-                                   <p class="countNumber">10</p>
-                                   <p>DEALS</p>
-                              </div>
-                                  <img class="imageContain" src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
-                              <h2>
-                                  Automotive
-                              </h2>
-                          </div>
-                  </div>
-                   <div class="tallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)" style="position:relative;">
-                      <div class="offerCount">
-                              <p class="countNumber">6</p>
-                              <p>DEALS</p>
-                      </div>
-                          <img class="imageContain" src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
-                      <h2>
-                          Kitchen
-                      </h2>
-                  </div>
-              </article>
-              <article class="secondTemplate">
-                  <div class="landingTemplate_LSSI cb">
-                       <div class="largeBlock">
-                            <div class="textInfo">
-                                <h2>
-                                    Weekly Specials 5/25
-                                </h2>
-                                 <div class="offerCount">
-                                  <p class="countNumber">60</p>
-                                  <p>DEALS</p>
-                      			</div>
-                            </div>
-                                <img class="imageContain" src="http://akimages.shoplocal.com/dyn_rppi/420.0.80.0/HomeDepot/large/0001_STA052514_bP1_h4lz0.jpg">
-                        </div>
-                      <div class="ss_holder">
-                      <div class="topBlock">
-                          <div class="smallBlock smallListingBlock" ng-click="openItemDetail(item.ID)">
+                      <div class="squarePadding excludeFromMobile"></div>
+                      <div class="blocksContain">
+                           <div class="largeBlock firstBlock">
+                                <div class="textInfo">
+                                    <h2>
+                                        Weekly Specials 5/25
+                                    </h2>
+                                     <div class="offerCount">
+                                      <p class="countNumber">60</p>
+                                      <p>DEALS</p>
+                                    </div>
+                                </div>
+                                <img class="imageContain"src="http://akimages.shoplocal.com/dyn_rppi/420.0.80.0/HomeDepot/large/0001_STA052514_bP1_h4lz0.jpg">
+                        	</div>
+                      	<div class="ss_holder middleBlock">
+                          <div class="smallBlock smallListingBlock topBlock">
                             <div class="containText">
                                 <div class="dealInblock">
                                     20-40% Off
@@ -202,13 +159,12 @@
                                 <div class="addDealInBlock excludeFromTablet excludeFromMobile">
                                         additional deal information
                                 </div>
-                                <div class="hoursRemaining">
+                                <div class="timeRemaining">
                                      <span class="countdownTime">4 <span class="countdownText">DAYS LEFT</span></span>
                                 </div>
                             </div>
                                 <img class="imageContain" src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
-                        </div>
-                      </div>
+                        	</div>
                           <div class="smallBlock">
                               <div class="offerCount">
                                    <p class="countNumber">10</p>
@@ -219,22 +175,26 @@
                                   Automotive
                               </h2>
                           </div>
-                  </div>
-                   <div class="tallBlock" ng-click="goToCategoryDetailedView(item.ElementTypeID, item.ID)" style="position:relative;">
-                      <div class="offerCount">
-                              <p class="countNumber">6</p>
-                              <p>DEALS</p>
+                  		</div>
+                       <div class="tallBlock lastBlock">
+                          <div class="offerCount">
+                                  <p class="countNumber">6</p>
+                                  <p>DEALS</p>
+                          </div>
+                              <img class="imageContain" src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                          <h2>
+                              Kitchen
+                          </h2>
                       </div>
-                          <img class="imageContain" src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
-                      <h2>
-                          Kitchen
-                      </h2>
                   </div>
+                  </div><!--end landingTemplate_LSSI-->
               </article>
-              <article class="thirdTemplate">
-               <div class="landingTemplate_SWS cb">
-                    <div class="firstMod topBlock"> 
-                          <div class="smallBlock">
+            
+              <article class="secondTemplate">
+               <div class="landingTemplate_SWS shortTemplate cb">
+                   <div class="squarePadding excludeFromMobile"></div>
+                      <div class="blocksContain">
+                          <div class="smallBlock firstBlock">
                               <div class="offerCount">
                                    <p class="countNumber">10</p>
                                    <p>DEALS</p>
@@ -244,9 +204,7 @@
                                   Automotive
                               </h2>
                           </div>
-                	</div>
-                    <div class="firstMod topBlock"> 
-                        <div class="wideBlock wideListingBlock">
+                          <div class="wideBlock wideListingBlock middleBlock">
                             <div class="containText">
                                 <div class="dealInblock">
                                     20-40% Off
@@ -260,15 +218,30 @@
                                 <div class="addDealInBlock excludeFromTablet excludeFromMobile">
                                     additional deal information
                                 </div>
-                                <div class="hoursRemaining">
+                                <div class="timeRemaining">
                                     <span class="countdownTime">4 <span class="countdownText">DAYS LEFT</span></span>
                                 </div>
                             </div>
                                 <img class="imageContain" src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
-                        </div>
+                          </div>
+                          <div class="smallBlock lastBlock">
+                              <div class="offerCount">
+                                   <p class="countNumber">10</p>
+                                   <p>DEALS</p>
+                              </div>
+                                  <img class="imageContain"src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                              <h2>
+                                  Automotive
+                              </h2>
+                          </div>
                     </div>
-                    <div class="firstMod topBlock"> 
-                          <div class="smallBlock">
+                </div><!-- landingTemplate_SWS -->
+              </article>
+               <article class="thirdTemplate">
+               <div class="landingTemplate_SWS shortTemplate cb">
+                   <div class="squarePadding excludeFromMobile"></div>
+                      <div class="blocksContain">
+                          <div class="smallBlock firstBlock">
                               <div class="offerCount">
                                    <p class="countNumber">10</p>
                                    <p>DEALS</p>
@@ -278,8 +251,38 @@
                                   Automotive
                               </h2>
                           </div>
+                          <div class="wideBlock wideListingBlock middleBlock">
+                            <div class="containText">
+                                <div class="dealInblock">
+                                    20-40% Off
+                                </div>
+                                <div class="pqInBlock">
+                                	each
+                                </div>
+                                <div class="titleInBlock">
+                                    Men's Shirts
+                                </div> 
+                                <div class="addDealInBlock excludeFromTablet excludeFromMobile">
+                                    additional deal information
+                                </div>
+                                <div class="timeRemaining">
+                                    <span class="countdownTime">4 <span class="countdownText">DAYS LEFT</span></span>
+                                </div>
+                            </div>
+                                <img class="imageContain" src="http://akimages.shoplocal.com/dyn_li/420.0.88.0/retailers\kohls\category_images\hp-hp-equity1-20140825-nav04.jpg" />
+                          </div>
+                          <div class="smallBlock lastBlock">
+                              <div class="offerCount">
+                                   <p class="countNumber">10</p>
+                                   <p>DEALS</p>
+                              </div>
+                                  <img class="imageContain"src="http://akimages.shoplocal.com/dyn_li/400.0.90.0/Retailers/Kohls/150118_02AD_3a.jpg" />
+                              <h2>
+                                  Automotive
+                              </h2>
+                          </div>
                     </div>
-                </div>
+                </div><!-- landingTemplate_SWS -->
               </article>
        	</section><!-- end GridContain-->
         

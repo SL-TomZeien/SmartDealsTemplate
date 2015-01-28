@@ -1,4 +1,4 @@
-.containModal {
+.modalContain {
 	width: 898px;
 	height: 562px;
 	background: white;
@@ -12,13 +12,13 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     /* iPad/tablet Portrait */
-	.containModal {
+	.modalContain {
 		width: 749px;
 	}
 }
 @media only screen and (max-width: 767px) {
     /* mobile Landscape AND Portrait */	
-	.containModal {
+	.modalContain {
 		width: auto;
 		height: auto;
 		-webkit-box-shadow: none;

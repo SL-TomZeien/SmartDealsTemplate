@@ -3,7 +3,7 @@
 .tallBlock, 
 .wideBlock, 
 .largeBlock{
-    float: left;
+
     position: relative;
     background-color: #FFF;
     overflow:hidden;
@@ -22,158 +22,105 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
     transition: border-color .1s ease, box-shadow .1s ease;
 }
+
+.blocksContain {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display: flex;
+	justify-content: space-between;
+}
+.squarePadding {
+	padding-bottom: 48.9%; /*This should be the same as the height of the large/tall blocks*/
+}
+.shortTemplate .squarePadding {
+	padding-bottom: 24.45%; /*On templates with "shortTemplate" class this should be the same as the height small/wide blocks*/
+}
+
 .largeBlock{
-    width: 482px;
-    height: 482px;
+    width: 48.9%;
+    height: 100%;
+	
 }
 .smallBlock{
-    width: 232px;
-    height: 232px;
+    width:23.8%;
+    height: 50%;
+}
+.ss_holder{
+    float: left;
+	width:23.8%;
+    height:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.ss_holder .smallBlock{
+    width:100%;
+	height: 48.4%;
     float: none;
     display:block;
 }
 .tallBlock{
-    width: 232px;
-    height: 482px;
+    width: 23.8%;
+    height: 100%;
+
 }
 .wideBlock{
-    height: 232px;
-    width: 482px;
+    width: 48.9%;
+	height: 50%;	
 }
 
-/************** column code ****************/
-
-.ss_holder{
-    width: auto;
-    float: left;
-    max-height: 482px;
+.shortTemplate .smallBlock{
+    width:23.8%;
+    height: 100%;
 }
 
-
-/************** spacing code ****************/
-
-.ss_holder, .largeBlock, .tallBlock{
-    margin: 9px;
-}
-.topBlock .smallBlock, 
-.topBlock .wideBlock {
-    margin-bottom: 18px;
-}
-.LargeBlock{
-    margin: 9px;
+.shortTemplate .wideBlock{
+    width: 48.9%;
+	height: 100%;	
 }
 
-/************** template 1 ****************/
-.landingTemplate_LSSI{
-    width: 1000px;
+/************** templates ****************/
+.landingTemplate_LSSI, .landingTemplate_SWS{
+    width: 100%;
     padding: 0;
+	position:relative;
+	margin-bottom:1.8%;
 }
-
-/************** template 2 ****************/
-.landingTemplate_SWS{
-     width: 1000px;
-}
-
-.landingTemplate_SWS > div{
-    float: left;
-    margin: 9px;
-    max-height: 232px;
-}
-
-
-
 
 /************** Media Queries For Responsive Behavior ****************/
 
 @media screen and (max-width: 1024px){
-	.largeBlock{
-		width: 358px;
-		height: 358px;
-	}
-	.smallBlock{
-		width: 172px;
-		height: 172px;
-	}
-	.tallBlock{
-		width: 172px;
-		height: 358px;
-	}
-	.wideBlock{
-		height: 172px;
-		width: 358px;
-	}
 
-
-	/************** spacing code ****************/
-	.ss_holder, .largeBlock, .tallBlock{
-		margin: 7px;
-	}
-	.topBlock .smallBlock, 
-	.topBlock .wideBlock {
-		margin-bottom: 14px;
-	}
-
-	/************** template 1 ****************/
-	.landingTemplate_LSSI{
-		width: 750px;
-		margin: 0 auto;
-	}
-
-	/************** template 2 ****************/
-	.landingTemplate_SWS{
-		 width: 750px;
-		margin: 0 auto;
-	}
-
-	.landingTemplate_SWS > div{
-		margin: 7px 7px 0 7px;
-	}
 }
 
 @media screen and (max-width: 767px) {
-	.smallBlock, .tallBlock, .wideBlock, .largeBlock {
-            float: none;
-            height: 160px;
-            width: auto;
+	.blocksContain {
+		display:block;
+		position:relative;
+		margin-top:15px;
+	}
+	.ss_holder {
+		display:block;
+		position:relative;
+	}
+	.ss_holder .smallBlock, .smallBlock, .tallBlock, .wideBlock, .largeBlock, .shortTemplate .smallBlock, .shortTemplate .wideBlock {
+        float: none;
+        height: 160px;
+        width: auto;
+		margin-bottom:7px;
     }
-
     .ss_holder {
         float: none;
         width: auto;
     }
-    .largeBlock{}
-    .smallBlock{}
-    .tallBlock{}
-    .wideBlock{}
 
-    .landingTemplate_SWS > div {
-        float: none;
-		margin:14px 0 0 0;
-    }
-    .landingTemplate_SSSS > div {
-        float: none;
-    }
-
-
-	/************** spacing code ****************/
-	.ss_holder, .largeBlock, .tallBlock{
-		margin: 14px 0 0 0;
-	}
-
-	/************** template 1 ****************/
-	.landingTemplate_LSSI{
+	/************** templates ****************/
+	.landingTemplate_LSSI, .landingTemplate_SWS{
 		width: auto;
 		padding: 0 14px;
-	}
-
-	/************** template 2 ****************/
-	.landingTemplate_SWS{
-		width: auto;
-		padding: 0 14px;
-	}
-
-	.landingTemplate_SWS > div{
-		margin: 14px 0 0 0;
 	}
 
 }

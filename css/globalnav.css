@@ -11,7 +11,7 @@
 	float: left;
 	width: 50%;
 }
-.currentAd_contain {
+.currentAdContain {
 	margin-bottom:7px;
 	display: block;
 }
@@ -70,7 +70,7 @@
 	position: static;
 }
 /*global nav - search*/
-.sl_globalNav .containSearch {
+.globalNav_rowTwo .searchContain {
 	float: right;
 	top: 7px;
 }
@@ -91,13 +91,13 @@
 }
 @media only screen and (max-width: 767px) {
     /***** mobile Landscape AND Portrait *****/
-	.sl_globalNav .containSearch {
+	.sl_globalNav .searchContain {
 		width: auto;
 		float: none;
 		margin: 10px 0;
 		top: initial;
 	}
-	.currentAd_contain {
+	.currentAdContain {
 		white-space:normal;
 		margin-bottom: 5px;
 	}

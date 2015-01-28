@@ -11,7 +11,6 @@
 
 /*grid contain*/
 #LandingContain #GridContain {
-
     background-color:#FFF;
     margin-bottom:60px;
 }
@@ -42,6 +41,12 @@
 .helpBox:hover {outline:2px solid #ccc;
 }
 
+/*Countdown*/
+.timeRemaining {
+	font-size:16px;
+	margin-top:10px;
+	font-weight:bold;
+}
 
 /******* Offer Count Badge Styles ********/
 #LandingContain .offerCount{
@@ -229,7 +234,11 @@
 
 @media screen and (max-width: 1024px) {
 	/* iPad/tablet Portrait AND Landscape */
-    .dealInblock {
+    #LandingContain #GridContain {
+		width: 738px;
+		margin: 0 auto;
+	}
+	.dealInblock {
         font-size: 22px;
     }
     .titleInBlock {
@@ -251,7 +260,6 @@
 	
     #LandingContain .largeBlock .imageContain {
         width: 320px;
-        height: 320px;
     }
     #LandingContain .largeBlock.largeListingBlock .imageContain {
         width: 320px;
@@ -271,7 +279,6 @@
     }
     #LandingContain .tallBlock .imageContain {
         width: 165px;
-        height: 358px;
         top:80px;
     }
     #LandingContain .tallBlock.tallListingBlock .imageContain {
@@ -296,7 +303,11 @@
 }
 @media only screen and (max-width: 767px) {
 	 /* mobile Landscape AND Portrait */
-    .smallBlock h2, 
+    #LandingContain #GridContain {
+		width: auto;
+		margin: 0 auto;
+	}
+	.smallBlock h2, 
     .tallBlock h2, 
     .wideBlock h2, 
     .largeBlock h2 {
@@ -317,7 +328,6 @@
 	}
 	
 	#LandingContain .smallBlock .imageContain, #LandingContain .wideBlock .imageContain, #LandingContain .tallBlock .imageContain, #LandingContain .smallBlock.smallListingBlock .imageContain, #LandingContain .tallBlock.tallListingBlock .imageContain, #LandingContain .wideBlock.wideListingBlock .imageContain, #LandingContain .largeBlock .imageContain {
-        height: 140px;
         margin: 12px 0 0 10px;
         width: 140px;
 		top:0;
