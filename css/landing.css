@@ -95,15 +95,15 @@
 	z-index:3;
 }
 
-.containText {
+.textContain {
     padding: 12px;
 }
 
-.largeListingBlock .containText {
+.largeListingBlock .textContain {
     padding: 16px 12px 10px 16px;
 }
 
-#LandingContain .wideBlock.wideListingBlock .containText {
+#LandingContain .wideBlock.wideListingBlock .textContain {
     width:50%;
     text-align:left;
 }
@@ -316,7 +316,7 @@
         width: 96%;
     }
 	
-    .containText {float:right;
+    .textContain {float:right;
         text-align:right;
         background-color: transparent;
         width: 50%;
@@ -333,12 +333,12 @@
 		top:0;
     }  
 	    
-    #LandingContain .wideBlock.wideListingBlock .containText {
+    #LandingContain .wideBlock.wideListingBlock .textContain {
         width:50%;
         text-align:right;
     }
 	
-    #LandingContain .largeBlock.largeListingBlock .containText {
+    #LandingContain .largeBlock.largeListingBlock .textContain {
 		float:none;
         text-align:left;
         width:85%;
