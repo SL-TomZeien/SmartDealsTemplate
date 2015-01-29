@@ -1,3 +1,5 @@
+$primary-color: #3258b3;
+
 *:focus {
     outline: 0; /*remove blue outline of active elements in chrome*/
 }
@@ -24,7 +26,7 @@ body {
 	font-weight: bold;
 }
 .stdLink {
-	color:#3258b3;
+	color: $primary-color;
 	text-decoration:underline;
 	cursor:pointer;
 }
@@ -33,6 +35,7 @@ body {
 }
 .shoplocal_container {
 	max-width:1000px;
+    width: 90%;
 	margin:0 auto;
 }
 @media only screen and (min-width: 1025px) {

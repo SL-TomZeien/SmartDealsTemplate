@@ -14,7 +14,8 @@
     background-color:#FFF;
     margin-bottom:60px;
 }
-#LandingContain {margin-top:20px;
+#LandingContain {
+    margin-top:20px;
 }
 
 /*help box*/
@@ -52,7 +53,7 @@
 #LandingContain .offerCount{
     width:46px;
     height:40px;
-    background:#3258b3;
+    background:$primary-color;
     text-align:center;
     color:#FFF;
     line-height: 16px;
@@ -94,15 +95,12 @@
     text-transform: uppercase;
 	z-index:3;
 }
-
 .textContain {
     padding: 12px;
 }
-
 .largeListingBlock .textContain {
     padding: 16px 12px 10px 16px;
 }
-
 #LandingContain .wideBlock.wideListingBlock .textContain {
     width:50%;
     text-align:left;
@@ -141,7 +139,6 @@
     margin-top:3px;
 }
 
-        
 /*image styles*/
 #LandingContain .imageContain img {
     max-width:100%;
@@ -156,7 +153,6 @@
     bottom:30px;
     display: block;
 }
-
 #LandingContain .largeBlock .imageContain {
     width: 400px;
     position: relative;
@@ -165,26 +161,22 @@
     margin:0 auto;
     display: block;
 }
-
 #LandingContain .specialBlock.largeBlock .imageContain {
     bottom:46px;
     display: block;
 }
-
 #LandingContain .wideBlock .imageContain {
     width:180px;
     height:180px;
     margin:10px auto 0 auto;
     display: block;
 }
-
 #LandingContain .smallBlock .imageContain {
     width:180px;
     height:180px;
     margin: 30px auto 0;
     display: block;
 }
-
 #LandingContain .largeBlock.largeListingBlock .imageContain {
     margin: 0px auto;
     width: 420px;
@@ -209,7 +201,6 @@
     width:200px;
     display: block;
 }
-
 #LandingContain .tallBlock.tallListingBlock .imageContain {
     position: relative;
     left: 0;
@@ -217,7 +208,6 @@
     top:50px;
     display: block;
 }
-
 #LandingContain .wideBlock.wideListingBlock .imageContain {
     float:left;
     position:absolute;
@@ -231,13 +221,8 @@
     display: block;
 }
 
-
 @media screen and (max-width: 1024px) {
 	/* iPad/tablet Portrait AND Landscape */
-    #LandingContain #GridContain {
-		width: 738px;
-		margin: 0 auto;
-	}
 	.dealInblock {
         font-size: 22px;
     }
@@ -250,7 +235,6 @@
         margin-top:5px;
     }
 	#LandingContain {
-		width:768px;
 		margin:20px auto 0 auto;
 	}
 

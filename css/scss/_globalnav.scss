@@ -51,12 +51,12 @@
 .globalNavTab {
 	display: inline-block;
 	padding: 10px 20px;
-	border-top: 1px solid #3258b3;
-	border-left: 1px solid #3258b3;
-	border-right: 1px solid #3258b3;
+	border-top: 1px solid $primary-color;
+	border-left: 1px solid $primary-color;
+	border-right: 1px solid $primary-color;
 	cursor: pointer;
 	font-size: 13px;
-	background: #3258b3;
+	background: $primary-color;
 	color: white;
 	position: relative;
 	top: 3px;

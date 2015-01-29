@@ -15,7 +15,7 @@
 	height: 36px;
 	width: 100%;
 	text-align: center;
-	background: #3258b3;
+	background: $primary-color;
 	cursor: pointer;
 	font-size: 14px;
 	margin-bottom:10px;
@@ -47,7 +47,7 @@
 .prevPageBtn, .nextPageBtn {
 	width: 50px;
 	height: 90px;
-	background-color: #3258b3;
+	background-color: $primary-color;
 	z-index: 10000;
 }
 
@@ -94,7 +94,7 @@
 	height: 0;
 	border-left: 5px inset transparent;
 	border-right: 5px inset transparent;
-	border-top: 9px solid #3258b3;
+	border-top: 9px solid $primary-color;
 	text-indent: -900px;
 	overflow: hidden;
 	cursor: pointer;
@@ -105,7 +105,7 @@
 	height: 0;
 	border-left: 5px inset transparent;
 	border-right: 5px inset transparent;
-	border-bottom: 9px solid #3258b3;
+	border-bottom: 9px solid $primary-color;
 	text-indent: -900px;
 	overflow: hidden;
 	cursor: pointer;
@@ -194,7 +194,7 @@
 		content: "";
 		height: 0;
 		width: 0;
-		border-right: 5px solid #3258b3;
+		border-right: 5px solid $primary-color;
 		border-top: 4px solid transparent;
 		border-bottom: 4px solid transparent;
 		position: absolute;
