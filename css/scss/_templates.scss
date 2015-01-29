@@ -1,0 +1,151 @@
+$small-block-size: 24%; /* changes the size of the blocks (higher numbers decrease the gutters between blocks) 
+MAXIMUM 25%, default of 23.8% = 16px gutters on width of 1000px site, because this results in a 1.6% gutter */
+
+
+/*********************** DO NOT CHANGE THESE ************************/
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+
+// gutter size is equal to the entire width of the template minus all the small block widths (4 of them), and divided by the 3 remaining vertical spaces
+$gutter-size: (100% - ($small-block-size * 4)) / 3;
+
+// large block size is equal to two small blocks plus the one gutter that would have separated them
+$large-block-size: $small-block-size * 2 + $gutter-size;
+
+// horizontal space between two stacked small blocks is equal to the normal gutter space divided by the height of the entire template as a percentage a.k.a the large block size
+// this horizontal space is then subtracted from 100% to get the height of the two small blocks combined, as a percentage
+// this percentage is then divided by two to find the small block height
+$small-block-in-holder-height: (100% - ($gutter-size/$large-block-size * 100)) / 2;
+
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+
+/************** box styles ****************/
+.smallBlock, 
+.tallBlock, 
+.wideBlock, 
+.largeBlock{
+    position: relative;
+    background-color: #FFF;
+    overflow:hidden;
+    cursor:pointer;
+    border: 1px solid #CCC;
+    transition: border-color .5s ease, box-shadow .5s ease;
+}
+.smallBlock:hover, 
+.tallBlock:hover, 
+.wideBlock:hover, 
+.largeBlock:hover {
+    border-color: #bbb;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    transition: border-color .1s ease, box-shadow .1s ease;
+}
+.blocksContain {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display: flex;
+	justify-content: space-between;
+}
+.squarePadding {
+	padding-bottom: $large-block-size; /*This should be the same as the height/width of the large blocks*/
+}
+.shortTemplate .squarePadding {
+	padding-bottom: $small-block-size; /*On templates with "shortTemplate" class this should be the same as the height small/wide blocks*/
+}
+
+.largeBlock{
+    width: $large-block-size;
+    height: 100%;
+}
+.smallBlock{
+    width:$small-block-size;
+    height: $small-block-size;
+}
+.ss_holder{
+    float: left;
+	width:$small-block-size;
+    height:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.ss_holder .smallBlock{
+    width:100%;
+	height: $small-block-in-holder-height;
+    float: none;
+    display:block;
+}
+.tallBlock{
+    width: $small-block-size;
+    height: 100%;
+}
+.wideBlock{
+    width: $large-block-size;
+	height: $small-block-size;	
+}
+.shortTemplate .smallBlock{
+    width:$small-block-size;
+    height: 100%;
+}
+.shortTemplate .wideBlock{
+    width: $large-block-size;
+	height: 100%;	
+}
+
+/************** templates ****************/
+.landingTemplate_LSSI, .landingTemplate_SWS{
+    width: 100%;
+    padding: 0;
+	position:relative;
+	margin-bottom: $gutter-size;
+}
+
+/************** Media Queries For Responsive Behavior ****************/
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 767px) {
+	.blocksContain {
+		display:block;
+		position:relative;
+		margin-top:15px;
+	}
+	.ss_holder {
+		display:block;
+		position:relative;
+	}
+	.ss_holder .smallBlock, .smallBlock, .tallBlock, .wideBlock, .largeBlock, .shortTemplate .smallBlock, .shortTemplate .wideBlock {
+        float: none;
+        height: 160px;
+        width: auto;
+		margin-bottom:7px;
+    }
+    .ss_holder {
+        float: none;
+        width: auto;
+    }
+
+	/************** templates ****************/
+	.landingTemplate_LSSI, .landingTemplate_SWS{
+		width: auto;
+		padding: 0 14px;
+	}
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Mobile Landscape */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Mobile Portrait */
+}
