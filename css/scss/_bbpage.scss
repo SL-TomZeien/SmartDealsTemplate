@@ -2,13 +2,13 @@
 	overflow: hidden;
 	width: 100%;
 	padding: 10px 0;
-	border:1px solid #ccc;
+	border:1px solid $border-color;
 	background:#eee;
 	position: relative;
 }
 .bbpwrapper {
 	margin: 0 auto;
-	outline: 1px solid #ccc;
+	outline: 1px solid $border-color;
 	overflow: hidden; 
 	width: 938px; /*for template only*/
 	height: 1200px; /*for template only*/
@@ -83,7 +83,7 @@
         overflow: visible !important; /*for template without data only*/
     }
 	.promotionPageSelected {
-		border: 1px solid #ccc;
+		border: 1px solid $border-color;
 		margin: 0 9px 0 9px;
 	}
     .theToggle {

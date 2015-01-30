@@ -1,10 +1,10 @@
 .globalNav_rowOne {
 	padding-bottom: 10px;
 	padding-top: 10px;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid $border-color;
 }
 .globalNav_rowTwo {
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid $border-color;
 }
 /*global nav - location*/
 .locationContain_globalNav {
@@ -34,7 +34,7 @@
 	font-size: 12px;
 	padding: 1px 10px;
 	display: inline-block;
-	border: 1px solid #ccc;
+	border: 1px solid $border-color;
 }
 .savedDeals_label {
 	font-size: 12px;
@@ -51,22 +51,22 @@
 .globalNavTab {
 	display: inline-block;
 	padding: 10px 20px;
-	border-top: 1px solid $primary-color;
-	border-left: 1px solid $primary-color;
-	border-right: 1px solid $primary-color;
+	border-top: 1px solid $primary-button-color;
+	border-left: 1px solid $primary-button-color;
+	border-right: 1px solid $primary-button-color;
 	cursor: pointer;
 	font-size: 13px;
-	background: $primary-color;
-	color: white;
+	background: $primary-button-color;
+	color: $primary-button-text-color;
 	position: relative;
 	top: 3px;
 }
 .globalNavTab.activeTab {
-	background: white !important;
+	background: white;
 	color: black;
-	border-top: 1px solid #ccc;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+	border-top: 1px solid $border-color;
+	border-left: 1px solid $border-color;
+	border-right: 1px solid $border-color;
 	position: static;
 }
 /*global nav - search*/

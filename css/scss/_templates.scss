@@ -1,5 +1,6 @@
-$small-block-size: 24%; /* changes the size of the blocks (higher numbers decrease the gutters between blocks) 
-MAXIMUM 25%, default of 23.8% = 16px gutters on width of 1000px site, because this results in a 1.6% gutter */
+/* changes the size of the blocks (higher numbers decrease the gutters between them) 
+MAXIMUM 25%, 23.8% = 16px gutters on width of 1000px site, because this results in a 1.6% gutter space */
+$small-block-size: 24%;
 
 
 /*********************** DO NOT CHANGE THESE ************************/
@@ -32,14 +33,14 @@ $small-block-in-holder-height: (100% - ($gutter-size/$large-block-size * 100)) /
     background-color: #FFF;
     overflow:hidden;
     cursor:pointer;
-    border: 1px solid #CCC;
+    border: 1px solid $border-color;
     transition: border-color .5s ease, box-shadow .5s ease;
 }
 .smallBlock:hover, 
 .tallBlock:hover, 
 .wideBlock:hover, 
 .largeBlock:hover {
-    border-color: #bbb;
+    border-color: darken($border-color, 5%);
     box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
     transition: border-color .1s ease, box-shadow .1s ease;
 }
@@ -53,55 +54,54 @@ $small-block-in-holder-height: (100% - ($gutter-size/$large-block-size * 100)) /
 	justify-content: space-between;
 }
 .squarePadding {
-	padding-bottom: $large-block-size; /*This should be the same as the height/width of the large blocks*/
+	padding-bottom: $large-block-size; /* This should be the same as the height/width of the large blocks */
 }
 .shortTemplate .squarePadding {
-	padding-bottom: $small-block-size; /*On templates with "shortTemplate" class this should be the same as the height small/wide blocks*/
+	padding-bottom: $small-block-size; /* On templates with "shortTemplate" class this should be the same as the height small/wide blocks */
 }
 
-.largeBlock{
+.largeBlock {
     width: $large-block-size;
     height: 100%;
 }
-.smallBlock{
+.smallBlock {
     width:$small-block-size;
     height: $small-block-size;
 }
-.ss_holder{
-    float: left;
+.tallBlock {
+    width: $small-block-size;
+    height: 100%;
+}
+.wideBlock {
+    width: $large-block-size;
+    height: $small-block-size;  
+}
+
+/************** two small stacked boxes ****************/
+.ss_holder {
 	width:$small-block-size;
     height:100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.ss_holder .smallBlock{
+.ss_holder .smallBlock {
     width:100%;
 	height: $small-block-in-holder-height;
     float: none;
     display:block;
 }
-.tallBlock{
-    width: $small-block-size;
+
+/************** 1-row template ****************/
+.shortTemplate .smallBlock {
     height: 100%;
 }
-.wideBlock{
-    width: $large-block-size;
-	height: $small-block-size;	
-}
-.shortTemplate .smallBlock{
-    width:$small-block-size;
-    height: 100%;
-}
-.shortTemplate .wideBlock{
-    width: $large-block-size;
+.shortTemplate .wideBlock {
 	height: 100%;	
 }
 
 /************** templates ****************/
 .landingTemplate_LSSI, .landingTemplate_SWS{
-    width: 100%;
-    padding: 0;
 	position:relative;
 	margin-bottom: $gutter-size;
 }
@@ -129,7 +129,6 @@ $small-block-in-holder-height: (100% - ($gutter-size/$large-block-size * 100)) /
 		margin-bottom:7px;
     }
     .ss_holder {
-        float: none;
         width: auto;
     }
 

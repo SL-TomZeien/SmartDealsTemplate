@@ -29,7 +29,7 @@
 	text-transform: uppercase;
 }
 .helpBox {
-	outline: 1px solid #ccc;
+	outline: 1px solid $border-color;
 	padding: 0;
 	font-size: 14px;
 	height: 28px;
@@ -39,7 +39,7 @@
 	line-height: 28px;
 	text-indent: -2px;
 }
-.helpBox:hover {outline:2px solid #ccc;
+.helpBox:hover {outline:2px solid $border-color;
 }
 
 /*Countdown*/

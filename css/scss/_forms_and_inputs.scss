@@ -1,6 +1,6 @@
 /* default styles for search input. When style changes (width, position, etc.) are needed for a specific view, scope them inside their respective CSS files */
 .searchContain, .sendContain {
-	border: 1px solid #ccc;
+	border: 1px solid $border-color;
 	padding: 0;
 	position: relative;
 	height: 32px;

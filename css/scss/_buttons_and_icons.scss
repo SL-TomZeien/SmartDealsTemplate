@@ -6,7 +6,7 @@
 	background-color: black;
 	padding: 0;
 	cursor: pointer;
-	color: white;
+	color: $primary-button-text-color;
 	outline: 0;
 	vertical-align: middle;
 	overflow: hidden;
@@ -15,7 +15,8 @@
 	height: 36px;
 	width: 100%;
 	text-align: center;
-	background: $primary-color;
+	background: $primary-button-color;
+	color: $primary-button-text-color;
 	cursor: pointer;
 	font-size: 14px;
 	margin-bottom:10px;
@@ -24,13 +25,14 @@
 	height: 36px;
 	width: 100%;
 	text-align: center;
-	background: #666;
+	background: $secondary-button-color;
+	color: $secondary-button-text-color;
 	cursor: pointer;
 	font-size: 14px;
 	margin-bottom:10px;
 }
 .primaryBtn:hover, .secondaryBtn:hover {
-	background:#ccc;
+	background:$border-color;
 }
 .prevPageBtn, .nextPageBtn, .heroPrev, .heroNext {
 	text-indent: -999px;
@@ -47,7 +49,7 @@
 .prevPageBtn, .nextPageBtn {
 	width: 50px;
 	height: 90px;
-	background-color: $primary-color;
+	background-color: $primary-button-color;
 	z-index: 10000;
 }
 
@@ -67,7 +69,7 @@
 	width: 0;
 	height: 0;
 	border-bottom: 12px inset transparent;
-	border-left: 16px solid #fff;
+	border-left: 16px solid $primary-button-text-color;
 	border-top: 12px inset transparent;
 	position: absolute;
 	display: block;
@@ -79,7 +81,7 @@
 	width: 0;
 	height: 0;
 	border-bottom: 12px inset transparent;
-	border-right: 16px solid #fff;
+	border-right: 16px solid $primary-button-text-color;
 	border-top: 12px inset transparent;
 	position: absolute;
 	display: block;
@@ -116,7 +118,7 @@
 	height: 0;
 	border-left: 5px inset transparent;
 	border-right: 5px inset transparent;
-	border-top: 9px solid #fff;
+	border-top: 9px solid $primary-button-text-color;
 	text-indent: -900px;
 	overflow: hidden;
 	cursor: pointer;
@@ -129,7 +131,7 @@
 	text-decoration: none;
 	height: 30px;
 	width: 30px;
-	border: 1px solid #999;
+	border: 1px solid $border-color;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-o-box-sizing: border-box;
@@ -162,7 +164,7 @@
 	-webkit-border-radius: 1px;
 	border-radius: 1px;
 	content: "";
-	background: #999;
+	background: $tertiary-button-text-color;
 	position: absolute;
 	display: block;
 }
