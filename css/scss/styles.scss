@@ -10,6 +10,25 @@ $secondary-button-text-color: #fff;
 
 $tertiary-button-text-color: #999;
 
+$radius: 0px;
+
+@mixin border-radius($var) {
+	-webkit-border-radius: $var;
+	-moz-border-radius: $var;
+	-ms-border-radius: $var;
+	border-radius: $var;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// import all the .scss partials (they should all begin with an underscore and not be declared here with their file extension nor the underscore).
+// this will ouput all the styles into the styles.css file.
 @import 'reset';
 @import 'site_wide';
 @import 'buttons_and_icons';

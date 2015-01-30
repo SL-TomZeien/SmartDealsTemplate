@@ -50,7 +50,8 @@ $small-block-in-holder-height: (100% - ($gutter-size/$large-block-size * 100)) /
 	left:0;
 	right:0;
 	bottom:0;
-	display: flex;
+	@include flexbox(); // calls the equivalent of 'display: flex;' mixin in styles.scss for maximum browser support
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 }
 .squarePadding {
@@ -81,8 +82,10 @@ $small-block-in-holder-height: (100% - ($gutter-size/$large-block-size * 100)) /
 .ss_holder {
 	width:$small-block-size;
     height:100%;
-	display: flex;
+	@include flexbox(); // calls the equivalent of 'display: flex;' mixin in styles.scss for maximum browser support
+	-webkit-flex-direction: column;
 	flex-direction: column;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 }
 .ss_holder .smallBlock {
